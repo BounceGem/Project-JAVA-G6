@@ -26,43 +26,49 @@ public class LoginP extends javax.swing.JDialog {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        usernameF.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
+        usernameF.setText("fdfsdfsdffsdf");
         usernameF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameFActionPerformed(evt);
             }
         });
-        getContentPane().add(usernameF, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 261, 164, 30));
+        getContentPane().add(usernameF, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 250, 30));
         usernameF.getAccessibleContext().setAccessibleName("");
         usernameF.getAccessibleContext().setAccessibleDescription("Username");
 
+        passwordF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        passwordF.setText("czxcxzc");
         passwordF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordFActionPerformed(evt);
             }
         });
-        getContentPane().add(passwordF, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 302, 164, 30));
+        getContentPane().add(passwordF, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 250, 30));
         passwordF.getAccessibleContext().setAccessibleDescription("Password");
 
+        logiinB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         logiinB.setText("Login");
         logiinB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logiinBActionPerformed(evt);
             }
         });
-        getContentPane().add(logiinB, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 343, 80, -1));
+        getContentPane().add(logiinB, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 100, 30));
 
-        qiutB.setText("Quit");
+        qiutB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
+        qiutB.setText("Sign up");
         qiutB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 qiutBActionPerformed(evt);
             }
         });
-        getContentPane().add(qiutB, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 343, 80, -1));
+        getContentPane().add(qiutB, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 100, 30));
 
-        NameL.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        NameL.setFont(new java.awt.Font("Stencil", 0, 48)); // NOI18N
         NameL.setText("Facility Management");
         NameL.setToolTipText("");
-        getContentPane().add(NameL, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 112, -1, 57));
+        getContentPane().add(NameL, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 540, 80));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
