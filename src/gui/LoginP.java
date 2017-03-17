@@ -19,27 +19,35 @@ public class LoginP extends javax.swing.JDialog {
         logiinB = new javax.swing.JButton();
         qiutB = new javax.swing.JButton();
         NameL = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Facility Management");
         setAlwaysOnTop(true);
+        setMaximumSize(new java.awt.Dimension(800, 590));
+        setMinimumSize(new java.awt.Dimension(800, 590));
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         usernameF.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
-        usernameF.setText("fdfsdfsdffsdf");
         usernameF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameFActionPerformed(evt);
             }
         });
+        getContentPane().add(usernameF, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 250, 30));
+        usernameF.getAccessibleContext().setAccessibleName("Username");
+        usernameF.getAccessibleContext().setAccessibleDescription("Username");
 
         passwordF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        passwordF.setText("czxcxzc");
         passwordF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordFActionPerformed(evt);
             }
         });
+        getContentPane().add(passwordF, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 250, 30));
+        passwordF.getAccessibleContext().setAccessibleName("Password");
+        passwordF.getAccessibleContext().setAccessibleDescription("Password");
 
         logiinB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         logiinB.setText("Login");
@@ -48,6 +56,7 @@ public class LoginP extends javax.swing.JDialog {
                 logiinBActionPerformed(evt);
             }
         });
+        getContentPane().add(logiinB, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, 100, 30));
 
         qiutB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         qiutB.setText("Sign up");
@@ -56,48 +65,15 @@ public class LoginP extends javax.swing.JDialog {
                 qiutBActionPerformed(evt);
             }
         });
+        getContentPane().add(qiutB, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 390, 100, 30));
 
         NameL.setFont(new java.awt.Font("Stencil", 0, 48)); // NOI18N
         NameL.setText("Facility Management");
         NameL.setToolTipText("");
+        getContentPane().add(NameL, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 540, 80));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(NameL, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(230, 230, 230)
-                .addComponent(usernameF, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(230, 230, 230)
-                .addComponent(passwordF, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(250, 250, 250)
-                .addComponent(logiinB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(qiutB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(160, 160, 160)
-                .addComponent(NameL, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(usernameF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(passwordF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(logiinB, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(qiutB, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
-
-        usernameF.getAccessibleContext().setAccessibleName("");
-        usernameF.getAccessibleContext().setAccessibleDescription("Username");
-        passwordF.getAccessibleContext().setAccessibleDescription("Password");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/login.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -159,6 +135,7 @@ public class LoginP extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel NameL;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton logiinB;
     private javax.swing.JPasswordField passwordF;
     private javax.swing.JButton qiutB;
