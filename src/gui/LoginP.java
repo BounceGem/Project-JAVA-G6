@@ -24,7 +24,6 @@ public class LoginP extends javax.swing.JDialog {
         setTitle("Facility Management");
         setAlwaysOnTop(true);
         setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         usernameF.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         usernameF.setText("fdfsdfsdffsdf");
@@ -33,9 +32,6 @@ public class LoginP extends javax.swing.JDialog {
                 usernameFActionPerformed(evt);
             }
         });
-        getContentPane().add(usernameF, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 250, 30));
-        usernameF.getAccessibleContext().setAccessibleName("");
-        usernameF.getAccessibleContext().setAccessibleDescription("Username");
 
         passwordF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         passwordF.setText("czxcxzc");
@@ -44,8 +40,6 @@ public class LoginP extends javax.swing.JDialog {
                 passwordFActionPerformed(evt);
             }
         });
-        getContentPane().add(passwordF, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 250, 30));
-        passwordF.getAccessibleContext().setAccessibleDescription("Password");
 
         logiinB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         logiinB.setText("Login");
@@ -54,7 +48,6 @@ public class LoginP extends javax.swing.JDialog {
                 logiinBActionPerformed(evt);
             }
         });
-        getContentPane().add(logiinB, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 100, 30));
 
         qiutB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         qiutB.setText("Sign up");
@@ -63,12 +56,48 @@ public class LoginP extends javax.swing.JDialog {
                 qiutBActionPerformed(evt);
             }
         });
-        getContentPane().add(qiutB, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 100, 30));
 
         NameL.setFont(new java.awt.Font("Stencil", 0, 48)); // NOI18N
         NameL.setText("Facility Management");
         NameL.setToolTipText("");
-        getContentPane().add(NameL, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 540, 80));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(NameL, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(230, 230, 230)
+                .addComponent(usernameF, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(230, 230, 230)
+                .addComponent(passwordF, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(250, 250, 250)
+                .addComponent(logiinB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(qiutB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(NameL, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(usernameF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(passwordF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(logiinB, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(qiutB, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+
+        usernameF.getAccessibleContext().setAccessibleName("");
+        usernameF.getAccessibleContext().setAccessibleDescription("Username");
+        passwordF.getAccessibleContext().setAccessibleDescription("Password");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
