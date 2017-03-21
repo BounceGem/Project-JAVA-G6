@@ -14,10 +14,10 @@ public class LoginP extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        usernameF = new javax.swing.JTextField();
-        passwordF = new javax.swing.JPasswordField();
-        logiinB = new javax.swing.JButton();
-        qiutB = new javax.swing.JButton();
+        usernameLIF = new javax.swing.JTextField();
+        passwordLIF = new javax.swing.JPasswordField();
+        logiinLIB = new javax.swing.JButton();
+        signupLIB = new javax.swing.JButton();
         NameL = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -29,43 +29,43 @@ public class LoginP extends javax.swing.JDialog {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        usernameF.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
-        usernameF.addActionListener(new java.awt.event.ActionListener() {
+        usernameLIF.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
+        usernameLIF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                usernameFActionPerformed(evt);
+                usernameLIFActionPerformed(evt);
             }
         });
-        getContentPane().add(usernameF, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 250, 30));
-        usernameF.getAccessibleContext().setAccessibleName("Username");
-        usernameF.getAccessibleContext().setAccessibleDescription("Username");
+        getContentPane().add(usernameLIF, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 250, 30));
+        usernameLIF.getAccessibleContext().setAccessibleName("Username");
+        usernameLIF.getAccessibleContext().setAccessibleDescription("Username");
 
-        passwordF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        passwordF.addActionListener(new java.awt.event.ActionListener() {
+        passwordLIF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        passwordLIF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passwordFActionPerformed(evt);
+                passwordLIFActionPerformed(evt);
             }
         });
-        getContentPane().add(passwordF, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 250, 30));
-        passwordF.getAccessibleContext().setAccessibleName("Password");
-        passwordF.getAccessibleContext().setAccessibleDescription("Password");
+        getContentPane().add(passwordLIF, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 250, 30));
+        passwordLIF.getAccessibleContext().setAccessibleName("Password");
+        passwordLIF.getAccessibleContext().setAccessibleDescription("Password");
 
-        logiinB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
-        logiinB.setText("Login");
-        logiinB.addActionListener(new java.awt.event.ActionListener() {
+        logiinLIB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
+        logiinLIB.setText("Login");
+        logiinLIB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                logiinBActionPerformed(evt);
+                logiinLIBActionPerformed(evt);
             }
         });
-        getContentPane().add(logiinB, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, 100, 30));
+        getContentPane().add(logiinLIB, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, 100, 30));
 
-        qiutB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
-        qiutB.setText("Sign up");
-        qiutB.addActionListener(new java.awt.event.ActionListener() {
+        signupLIB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
+        signupLIB.setText("Sign up");
+        signupLIB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                qiutBActionPerformed(evt);
+                signupLIBActionPerformed(evt);
             }
         });
-        getContentPane().add(qiutB, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 390, 100, 30));
+        getContentPane().add(signupLIB, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, 100, 30));
 
         NameL.setFont(new java.awt.Font("Stencil", 0, 48)); // NOI18N
         NameL.setText("Facility Management");
@@ -73,21 +73,21 @@ public class LoginP extends javax.swing.JDialog {
         getContentPane().add(NameL, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 540, 80));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/login.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 590));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void usernameFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameFActionPerformed
-        getContentPane().add(usernameF);
-    }//GEN-LAST:event_usernameFActionPerformed
+    private void usernameLIFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameLIFActionPerformed
+        getContentPane().add(usernameLIF);
+    }//GEN-LAST:event_usernameLIFActionPerformed
 
-    private void passwordFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFActionPerformed
-        getContentPane().add(passwordF);
-    }//GEN-LAST:event_passwordFActionPerformed
+    private void passwordLIFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordLIFActionPerformed
+        getContentPane().add(passwordLIF);
+    }//GEN-LAST:event_passwordLIFActionPerformed
 
-    private void logiinBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logiinBActionPerformed
-        if (usernameF.getText().equals("mildsadz") && passwordF.getText().equals("mildza789")) {
+    private void logiinLIBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logiinLIBActionPerformed
+        if (usernameLIF.getText().equals("mildsadz") && passwordLIF.getText().equals("mildza789")) {
             LocationP lp = new LocationP();
             lp.setDefaultCloseOperation(EXIT_ON_CLOSE);
             lp.setVisible(true);
@@ -95,11 +95,14 @@ public class LoginP extends javax.swing.JDialog {
         } else {
             JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
         }
-    }//GEN-LAST:event_logiinBActionPerformed
+    }//GEN-LAST:event_logiinLIBActionPerformed
 
-    private void qiutBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qiutBActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_qiutBActionPerformed
+    private void signupLIBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupLIBActionPerformed
+        RegisterP su = new RegisterP();
+        su.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        su.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_signupLIBActionPerformed
 
     public static void main(String args[]) {
         try {
@@ -136,9 +139,9 @@ public class LoginP extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel NameL;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JButton logiinB;
-    private javax.swing.JPasswordField passwordF;
-    private javax.swing.JButton qiutB;
-    private javax.swing.JTextField usernameF;
+    private javax.swing.JButton logiinLIB;
+    private javax.swing.JPasswordField passwordLIF;
+    private javax.swing.JButton signupLIB;
+    private javax.swing.JTextField usernameLIF;
     // End of variables declaration//GEN-END:variables
 }

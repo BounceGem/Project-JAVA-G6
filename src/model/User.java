@@ -7,16 +7,22 @@ public class User {
 
     public void login(String user, String pass) {
         if (user.equals(this.user) && password.equals(this.password)) {
-            
+
         }
     }
 
     public void logout() {
-        
+
     }
 
-    public void register(String firstname, String lastname, String posotion, String moblie, String email, String user, String pass) {
-
+    public void register(String firstname, String lastname, String position, String mobile, String email, String user, String pass) {
+        this.firstName = firstname;
+        this.lastName = lastname;
+        this.position = position;
+        this.mobile = mobile;
+        this.email = email;
+        this.user = user;
+        this.password = pass;
     }
 
     public long getUserId() {
@@ -81,6 +87,11 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", position=" + position + ", mobile=" + mobile + ", email=" + email + ", user=" + user + ", password=" + password + '}';
     }
 
 }

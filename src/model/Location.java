@@ -1,6 +1,5 @@
 package model;
 
-
 public class Location extends Place {
 
     private long accountId;
@@ -10,15 +9,15 @@ public class Location extends Place {
     private Transaction transaction;
 
     public void deposit(double amount) {
-
+        this.balance += amount;
     }
 
     public void withdraw(double amount) {
-
+        this.balance -= amount;
     }
 
     public void findById(long accountId) {
-
+        
     }
 
     public void query() {
