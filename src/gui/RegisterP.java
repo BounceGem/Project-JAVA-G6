@@ -36,9 +36,9 @@ public class RegisterP extends javax.swing.JFrame {
         setTitle("Facility Management");
         setAlwaysOnTop(true);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(800, 600));
-        setMinimumSize(new java.awt.Dimension(800, 600));
-        setPreferredSize(new java.awt.Dimension(800, 636));
+        setMaximumSize(new java.awt.Dimension(800, 590));
+        setMinimumSize(new java.awt.Dimension(800, 590));
+        setPreferredSize(new java.awt.Dimension(800, 590));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -114,7 +114,7 @@ public class RegisterP extends javax.swing.JFrame {
                 signupRBActionPerformed(evt);
             }
         });
-        getContentPane().add(signupRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 530, 133, 42));
+        getContentPane().add(signupRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, 133, 42));
 
         resetRB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         resetRB.setText("Reset");
@@ -123,7 +123,7 @@ public class RegisterP extends javax.swing.JFrame {
                 resetRBActionPerformed(evt);
             }
         });
-        getContentPane().add(resetRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 530, 133, 42));
+        getContentPane().add(resetRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, 133, 42));
 
         jRadioButton1.setText("Staff");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
