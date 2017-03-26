@@ -36,37 +36,43 @@ public class RegisterP extends javax.swing.JFrame {
         setTitle("Facility Management");
         setAlwaysOnTop(true);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(800, 590));
-        setMinimumSize(new java.awt.Dimension(800, 590));
-        setPreferredSize(new java.awt.Dimension(800, 590));
+        setMaximumSize(new java.awt.Dimension(800, 600));
+        setMinimumSize(new java.awt.Dimension(800, 600));
+        setPreferredSize(new java.awt.Dimension(800, 636));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Stencil", 1, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         jLabel2.setText("REGISTER");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 170, 60));
 
-        jLabel1.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Valken", 0, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
         jLabel1.setText("FIRSTNAME");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Valken", 0, 20)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
         jLabel3.setText("LASTNAME");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Valken", 0, 20)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("ADDRESS");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, 100, -1));
 
-        jLabel5.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Valken", 0, 20)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
         jLabel5.setText("E-MAIL");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 430, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Valken", 0, 20)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
         jLabel6.setText("USERNAME");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Valken", 0, 20)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(102, 102, 102));
         jLabel7.setText("PASSWORD");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, -1, -1));
 
@@ -107,39 +113,41 @@ public class RegisterP extends javax.swing.JFrame {
         });
         getContentPane().add(addressRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 280, 30));
 
-        signupRB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        signupRB.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
         signupRB.setText("Sign up");
         signupRB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 signupRBActionPerformed(evt);
             }
         });
-        getContentPane().add(signupRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, 133, 42));
+        getContentPane().add(signupRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 520, 130, 40));
 
-        resetRB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        resetRB.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
         resetRB.setText("Reset");
         resetRB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resetRBActionPerformed(evt);
             }
         });
-        getContentPane().add(resetRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, 133, 42));
+        getContentPane().add(resetRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 520, 120, 40));
 
+        jRadioButton1.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jRadioButton1.setText("Staff");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, -1, -1));
+        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, -1, -1));
 
+        jRadioButton2.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jRadioButton2.setText("Student");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 120, -1, -1));
+        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

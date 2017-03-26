@@ -43,7 +43,7 @@ public class LocationP extends javax.swing.JFrame {
 
         nextLB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         nextLB.setText("ถัดไป");
-        getContentPane().add(nextLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 530, 133, 42));
+        getContentPane().add(nextLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 530, 133, 42));
 
         quitLB4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         quitLB4.setText("ออก");
@@ -52,7 +52,7 @@ public class LocationP extends javax.swing.JFrame {
                 quitLB4ActionPerformed(evt);
             }
         });
-        getContentPane().add(quitLB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 530, 133, 42));
+        getContentPane().add(quitLB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, 133, 42));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setText("เลือกกิจกรรม");
