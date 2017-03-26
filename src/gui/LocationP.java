@@ -5,10 +5,12 @@ import model.*;
 
 public class LocationP extends javax.swing.JFrame {
 
+    
     public LocationP() {
         initComponents();
     }
 
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -17,17 +19,13 @@ public class LocationP extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
         nextLB = new javax.swing.JButton();
-        quitLB = new javax.swing.JButton();
+        quitLB4 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Facility Management");
         setAlwaysOnTop(true);
-        setBackground(new java.awt.Color(240, 172, 19));
-        setMaximumSize(new java.awt.Dimension(800, 590));
-        setMinimumSize(new java.awt.Dimension(800, 590));
-        setPreferredSize(new java.awt.Dimension(800, 590));
+        setPreferredSize(new java.awt.Dimension(800, 636));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -45,16 +43,16 @@ public class LocationP extends javax.swing.JFrame {
 
         nextLB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         nextLB.setText("ถัดไป");
-        getContentPane().add(nextLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 500, 133, 42));
+        getContentPane().add(nextLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 530, 133, 42));
 
-        quitLB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        quitLB.setText("ออก");
-        quitLB.addActionListener(new java.awt.event.ActionListener() {
+        quitLB4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        quitLB4.setText("ออก");
+        quitLB4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quitLBActionPerformed(evt);
+                quitLB4ActionPerformed(evt);
             }
         });
-        getContentPane().add(quitLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 500, 133, 42));
+        getContentPane().add(quitLB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 530, 133, 42));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setText("เลือกกิจกรรม");
@@ -67,12 +65,13 @@ public class LocationP extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void quitLBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLBActionPerformed
+    private void quitLB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLB4ActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_quitLBActionPerformed
+    }//GEN-LAST:event_quitLB4ActionPerformed
 
+    
     public static void main(String args[]) {
-
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -89,7 +88,7 @@ public class LocationP extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(LocationP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new LocationP().setVisible(true);
@@ -104,6 +103,6 @@ public class LocationP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JButton nextLB;
-    private javax.swing.JButton quitLB;
+    private javax.swing.JButton quitLB4;
     // End of variables declaration//GEN-END:variables
 }

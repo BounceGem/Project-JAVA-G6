@@ -3,10 +3,9 @@ package gui;
 import javax.swing.*;
 import model.*;
 
-public class LoginP extends javax.swing.JDialog {
+public class LoginP extends javax.swing.JFrame {
 
-    public LoginP(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public LoginP() {
         initComponents();
     }
 
@@ -14,20 +13,23 @@ public class LoginP extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        NameL = new javax.swing.JLabel();
         usernameLIF = new javax.swing.JTextField();
         passwordLIF = new javax.swing.JPasswordField();
         logiinLIB = new javax.swing.JButton();
         signupLIB = new javax.swing.JButton();
-        NameL = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Facility Management");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
-        setMaximumSize(new java.awt.Dimension(800, 590));
-        setMinimumSize(new java.awt.Dimension(800, 590));
+        setPreferredSize(new java.awt.Dimension(800, 636));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        NameL.setFont(new java.awt.Font("Stencil", 0, 48)); // NOI18N
+        NameL.setText("Facility Management");
+        NameL.setToolTipText("");
+        getContentPane().add(NameL, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 540, 80));
 
         usernameLIF.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         usernameLIF.addActionListener(new java.awt.event.ActionListener() {
@@ -36,8 +38,6 @@ public class LoginP extends javax.swing.JDialog {
             }
         });
         getContentPane().add(usernameLIF, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 250, 30));
-        usernameLIF.getAccessibleContext().setAccessibleName("Username");
-        usernameLIF.getAccessibleContext().setAccessibleDescription("Username");
 
         passwordLIF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         passwordLIF.addActionListener(new java.awt.event.ActionListener() {
@@ -46,8 +46,6 @@ public class LoginP extends javax.swing.JDialog {
             }
         });
         getContentPane().add(passwordLIF, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 250, 30));
-        passwordLIF.getAccessibleContext().setAccessibleName("Password");
-        passwordLIF.getAccessibleContext().setAccessibleDescription("Password");
 
         logiinLIB.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         logiinLIB.setText("Login");
@@ -66,11 +64,6 @@ public class LoginP extends javax.swing.JDialog {
             }
         });
         getContentPane().add(signupLIB, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 390, 100, 30));
-
-        NameL.setFont(new java.awt.Font("Stencil", 0, 48)); // NOI18N
-        NameL.setText("Facility Management");
-        NameL.setToolTipText("");
-        getContentPane().add(NameL, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 540, 80));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/login.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -105,6 +98,7 @@ public class LoginP extends javax.swing.JDialog {
     }//GEN-LAST:event_signupLIBActionPerformed
 
     public static void main(String args[]) {
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -124,14 +118,7 @@ public class LoginP extends javax.swing.JDialog {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                LoginP dialog = new LoginP(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
+                new LoginP().setVisible(true);
             }
         });
     }
