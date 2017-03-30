@@ -24,7 +24,11 @@ public class LocationP extends javax.swing.JFrame {
         jComboBox2 = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+<<<<<<< HEAD
         jLabel5 = new javax.swing.JLabel();
+=======
+        jLabel4 = new javax.swing.JLabel();
+>>>>>>> origin/master
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Location [Facility Management]");
@@ -99,8 +103,14 @@ public class LocationP extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 110, 30));
 
+<<<<<<< HEAD
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/map.jpg"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+=======
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/map.jpg"))); // NOI18N
+        jLabel4.setText("GYM");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 610));
+>>>>>>> origin/master
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -158,7 +168,11 @@ public class LocationP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel5;
+=======
+    private javax.swing.JLabel jLabel4;
+>>>>>>> origin/master
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton nextLB;
     private javax.swing.JButton quitLB4;

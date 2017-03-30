@@ -207,15 +207,27 @@
         </Constraint>
       </Constraints>
     </Component>
+<<<<<<< HEAD
     <Component class="javax.swing.JLabel" name="jLabel5">
+=======
+    <Component class="javax.swing.JLabel" name="jLabel4">
+>>>>>>> origin/master
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/gui/map.jpg"/>
         </Property>
+<<<<<<< HEAD
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
+=======
+        <Property name="text" type="java.lang.String" value="GYM"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="800" height="610"/>
+>>>>>>> origin/master
         </Constraint>
       </Constraints>
     </Component>
