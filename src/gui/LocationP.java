@@ -24,7 +24,6 @@ public class LocationP extends javax.swing.JFrame {
         jComboBox2 = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -99,10 +98,6 @@ public class LocationP extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 110, 30));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/map.jpg"))); // NOI18N
-        jLabel4.setText("GYM");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 610));
-
         jButton2.setText("GYM");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, -1));
 
@@ -163,7 +158,6 @@ public class LocationP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton nextLB;
     private javax.swing.JButton quitLB4;

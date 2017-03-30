@@ -102,9 +102,9 @@ public class LoginP extends javax.swing.JFrame {
 
     private void logiinLIBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logiinLIBActionPerformed
         if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
-            LocationP lp = new LocationP();
-            lp.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            lp.setVisible(true);
+            LocationP lp01 = new LocationP();
+            lp01.setDefaultCloseOperation(EXIT_ON_CLOSE);
+            lp01.setVisible(true);
             this.setVisible(false);
         } else {
             JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
@@ -121,9 +121,9 @@ public class LoginP extends javax.swing.JFrame {
     private void passwordLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordLIFKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
-                LocationP lp = new LocationP();
-                lp.setDefaultCloseOperation(EXIT_ON_CLOSE);
-                lp.setVisible(true);
+                LocationP lp02 = new LocationP();
+                lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                lp02.setVisible(true);
                 this.setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
