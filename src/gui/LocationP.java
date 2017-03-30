@@ -24,6 +24,8 @@ public class LocationP extends javax.swing.JFrame {
         jComboBox2 = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -33,44 +35,62 @@ public class LocationP extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        jLabel1.setText("Location Page");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, -1, -1));
+        jLabel1.setText("CHOose LOcation");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
 
+        jComboBox1.setBackground(new java.awt.Color(51, 255, 204));
+        jComboBox1.setEditable(true);
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "loca1", "loca2", "loca3", "loca4" }));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, 192, 36));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GYM", "CB1", "CB2", "CB3", "CB4", "CB5", "SIT BUILDING", "FIBO BUILDING" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 150, 36));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("เลือกสถานที่");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, -1, -1));
+        jLabel2.setForeground(new java.awt.Color(255, 102, 51));
+        jLabel2.setText("CHOOSE LOCATION");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        nextLB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        nextLB.setText("Next");
-        getContentPane().add(nextLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 540, 133, 42));
+        nextLB.setBackground(new java.awt.Color(102, 255, 204));
+        nextLB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        nextLB.setForeground(new java.awt.Color(204, 51, 0));
+        nextLB.setText("NEXT");
+        nextLB.setToolTipText("");
+        getContentPane().add(nextLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 550, 100, 30));
 
-        quitLB4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        quitLB4.setText("Back");
+        quitLB4.setBackground(new java.awt.Color(102, 255, 204));
+        quitLB4.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        quitLB4.setForeground(new java.awt.Color(204, 51, 0));
+        quitLB4.setText("BACK");
+        quitLB4.setToolTipText("");
         quitLB4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 quitLB4ActionPerformed(evt);
             }
         });
-        getContentPane().add(quitLB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 540, 133, 42));
+        getContentPane().add(quitLB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 550, 100, 30));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setText("เลือกกิจกรรม");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, -1, -1));
+        jLabel3.setForeground(new java.awt.Color(255, 102, 51));
+        jLabel3.setText("REPAIR & FINANCE ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
+        jComboBox2.setEditable(true);
         jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ซ่อมแซม", "การเงิน" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "REPAIR", "FINANCE" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, 192, 36));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 210, -1));
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 150, 36));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 120, -1));
 
+        jButton1.setBackground(new java.awt.Color(255, 204, 204));
+        jButton1.setForeground(new java.awt.Color(0, 153, 153));
         jButton1.setText("Add Location");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,6 +98,13 @@ public class LocationP extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 110, 30));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/map.jpg"))); // NOI18N
+        jLabel4.setText("GYM");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 610));
+
+        jButton2.setText("GYM");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -96,6 +123,10 @@ public class LocationP extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     
     public static void main(String args[]) {
@@ -126,11 +157,13 @@ public class LocationP extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton nextLB;
     private javax.swing.JButton quitLB4;
