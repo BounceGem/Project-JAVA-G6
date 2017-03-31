@@ -107,7 +107,7 @@ public class LoginP extends javax.swing.JFrame {
             lp01.setVisible(true);
             this.setVisible(false);
         } else {
-            JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Error!", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_logiinLIBActionPerformed
 

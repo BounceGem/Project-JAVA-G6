@@ -36,10 +36,9 @@ public class LocationP extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         jLabel1.setText("CHOose LOcation");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
 
         jComboBox1.setBackground(new java.awt.Color(51, 255, 204));
-        jComboBox1.setEditable(true);
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GYM", "CB1", "CB2", "CB3", "CB4", "CB5", "SIT BUILDING", "FIBO BUILDING" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +77,7 @@ public class LocationP extends javax.swing.JFrame {
         jLabel3.setText("REPAIR & FINANCE ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
-        jComboBox2.setEditable(true);
+        jComboBox2.setBackground(new java.awt.Color(51, 255, 204));
         jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "REPAIR", "FINANCE" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +98,7 @@ public class LocationP extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 110, 30));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/map.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/map.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
