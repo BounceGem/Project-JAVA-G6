@@ -142,6 +142,11 @@ public class RegisterP extends javax.swing.JFrame {
                 signupRBActionPerformed(evt);
             }
         });
+        signupRB.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                signupRBPropertyChange(evt);
+            }
+        });
         getContentPane().add(signupRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 540, 120, 40));
 
         resetRB.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
@@ -155,6 +160,11 @@ public class RegisterP extends javax.swing.JFrame {
 
         jRadioButton1.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jRadioButton1.setText("Staff");
+        jRadioButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jRadioButton1MousePressed(evt);
+            }
+        });
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton1ActionPerformed(evt);
@@ -164,6 +174,11 @@ public class RegisterP extends javax.swing.JFrame {
 
         jRadioButton2.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
         jRadioButton2.setText("Student");
+        jRadioButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jRadioButton2MousePressed(evt);
+            }
+        });
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
@@ -222,10 +237,10 @@ public class RegisterP extends javax.swing.JFrame {
     }//GEN-LAST:event_lastnameRFActionPerformed
 
     private void signupRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupRBActionPerformed
-        if(jRadioButton1.isSelected()||jRadioButton2.isSelected()){
+        if (jRadioButton1.isSelected() || jRadioButton2.isSelected()) {
             
         } else {
-            JOptionPane.showMessageDialog(this, "Please select staff or student", "Error!", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Please select Staff or Student", "Error!", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_signupRBActionPerformed
 
@@ -251,7 +266,7 @@ public class RegisterP extends javax.swing.JFrame {
     private void passwordRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordRFKeyReleased
         if (cPasswordRF.getText().equals(passwordRF.getText())) {
             jLabel7.setText("รหัสตรงกัน");
-        }else{
+        } else {
             jLabel7.setText("รหัสไม่ตรงกัน");
         }
     }//GEN-LAST:event_passwordRFKeyReleased
@@ -263,7 +278,7 @@ public class RegisterP extends javax.swing.JFrame {
     private void cPasswordRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cPasswordRFKeyReleased
         if (cPasswordRF.getText().equals(passwordRF.getText())) {
             jLabel7.setText("รหัสตรงกัน");
-        }else{
+        } else {
             jLabel7.setText("รหัสไม่ตรงกัน");
         }
     }//GEN-LAST:event_cPasswordRFKeyReleased
@@ -282,6 +297,18 @@ public class RegisterP extends javax.swing.JFrame {
         LiP.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_quitLB4ActionPerformed
+
+    private void jRadioButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButton1MousePressed
+
+    }//GEN-LAST:event_jRadioButton1MousePressed
+
+    private void jRadioButton2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButton2MousePressed
+
+    }//GEN-LAST:event_jRadioButton2MousePressed
+
+    private void signupRBPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_signupRBPropertyChange
+
+    }//GEN-LAST:event_signupRBPropertyChange
 
     public static void main(String args[]) {
 
