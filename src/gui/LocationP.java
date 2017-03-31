@@ -15,7 +15,6 @@ public class LocationP extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
         nextLB = new javax.swing.JButton();
@@ -33,10 +32,6 @@ public class LocationP extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(800, 624));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
-        jLabel1.setText("CHOose LOcation");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
 
         jComboBox1.setBackground(new java.awt.Color(51, 255, 204));
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -154,7 +149,6 @@ public class LocationP extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
