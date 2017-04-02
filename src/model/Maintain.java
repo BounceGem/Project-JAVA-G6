@@ -15,7 +15,7 @@ public class Maintain extends Place {
     }
 
     public void changeStatus(String status) {
-
+        this.status = status;
     }
 
     public void dismiss() {

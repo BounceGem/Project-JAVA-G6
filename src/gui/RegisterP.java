@@ -33,23 +33,27 @@ public class RegisterP extends javax.swing.JFrame {
         jRadioButton2 = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         IDF = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        AddressA = new javax.swing.JTextArea();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         quitLB4 = new javax.swing.JButton();
+        positionF = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        mobileF = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Facility Management");
+        setAlwaysOnTop(true);
         setLocationByPlatform(true);
+        setMaximumSize(new java.awt.Dimension(800, 600));
+        setMinimumSize(new java.awt.Dimension(800, 600));
         setPreferredSize(new java.awt.Dimension(800, 625));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Angsana New", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 102, 153));
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 230, 100, 30));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 200, 100, 30));
 
         jLabel2.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 0, 102));
@@ -58,26 +62,31 @@ public class RegisterP extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel1.setText("STUDENT ID OR STAFF ID");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel3.setText("LASTNAME");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
-        jLabel4.setText("ADDRESS");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 70, -1));
+        jLabel4.setText("MOBILE");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, 70, -1));
 
         jLabel5.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel5.setText("E-MAIL");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 320, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel6.setText("USERNAME");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, -1));
 
         emailRF.setBackground(new java.awt.Color(255, 219, 219));
-        getContentPane().add(emailRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 340, 250, 30));
+        emailRF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailRFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(emailRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 250, 30));
 
         cPasswordRF.setBackground(new java.awt.Color(255, 219, 219));
         cPasswordRF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -88,6 +97,11 @@ public class RegisterP extends javax.swing.JFrame {
         getContentPane().add(cPasswordRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, 250, 30));
 
         passwordRF.setBackground(new java.awt.Color(255, 219, 219));
+        passwordRF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordRFActionPerformed(evt);
+            }
+        });
         passwordRF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 passwordRFKeyReleased(evt);
@@ -96,13 +110,28 @@ public class RegisterP extends javax.swing.JFrame {
         getContentPane().add(passwordRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 250, 30));
 
         usernameRF.setBackground(new java.awt.Color(255, 219, 219));
+        usernameRF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usernameRFActionPerformed(evt);
+            }
+        });
         getContentPane().add(usernameRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 250, 30));
 
         firstnameRF.setBackground(new java.awt.Color(255, 219, 219));
-        getContentPane().add(firstnameRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 250, 30));
+        firstnameRF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                firstnameRFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(firstnameRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 250, 30));
 
         lastnameRF.setBackground(new java.awt.Color(255, 219, 219));
-        getContentPane().add(lastnameRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, 250, 30));
+        lastnameRF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lastnameRFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(lastnameRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 250, 30));
 
         signupRB.setBackground(new java.awt.Color(102, 255, 204));
         signupRB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
@@ -146,17 +175,15 @@ public class RegisterP extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel8.setText("FIRSTNAME");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, -1, -1));
 
         IDF.setBackground(new java.awt.Color(255, 219, 219));
-        getContentPane().add(IDF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 250, 30));
-
-        AddressA.setBackground(new java.awt.Color(255, 219, 219));
-        AddressA.setColumns(20);
-        AddressA.setRows(5);
-        jScrollPane1.setViewportView(AddressA);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 250, 110));
+        IDF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IDFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(IDF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 250, 30));
 
         jLabel9.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel9.setText("PASSWORD");
@@ -177,10 +204,31 @@ public class RegisterP extends javax.swing.JFrame {
         });
         getContentPane().add(quitLB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 540, 120, 40));
 
+        positionF.setBackground(new java.awt.Color(255, 219, 219));
+        positionF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                positionFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(positionF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 250, 30));
+
+        jLabel12.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
+        jLabel12.setText("POSITION");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 70, -1));
+
+        mobileF.setBackground(new java.awt.Color(255, 219, 219));
+        mobileF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mobileFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(mobileF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 250, 30));
+
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/register.jpg"))); // NOI18N
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 0, 800, 600));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void cPasswordRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cPasswordRFKeyReleased
@@ -201,13 +249,24 @@ public class RegisterP extends javax.swing.JFrame {
 
     private void signupRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupRBActionPerformed
         if (jRadioButton1.isSelected() || jRadioButton2.isSelected()) {
-
+            if (!firstnameRF.getText().equals("") && !lastnameRF.getText().equals("")
+                    && !mobileF.getText().equals("") && !emailRF.getText().equals("")
+                    && !usernameRF.getText().equals("") && !passwordRF.getText().equals("")
+                    && !cPasswordRF.getText().equals("")) {
+                user.register(firstnameRF.getText(), lastnameRF.getText(), role, position, mobileF.getText(), emailRF.getText(), usernameRF.getText(), passwordRF.getText());
+                JOptionPane.showMessageDialog(this, user.toString(), "Test", JOptionPane.WARNING_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, "Please insert text in blank space", "Error!", JOptionPane.WARNING_MESSAGE);
+            }
         } else {
             JOptionPane.showMessageDialog(this, "Please select Staff or Student", "Error!", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_signupRBActionPerformed
 
     private void resetRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetRBActionPerformed
+        jLabel7.setText("");
+        jRadioButton1.setSelected(false);
+        jRadioButton2.setSelected(false);
         IDF.setText("");
         usernameRF.setText("");
         passwordRF.setText("");
@@ -215,15 +274,18 @@ public class RegisterP extends javax.swing.JFrame {
         firstnameRF.setText("");
         lastnameRF.setText("");
         emailRF.setText("");
-        AddressA.setText("");
+        positionF.setText("");
+        mobileF.setText("");
     }//GEN-LAST:event_resetRBActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         jRadioButton2.setSelected(false);
+        role = jRadioButton1.getText();
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
         jRadioButton1.setSelected(false);
+        role = jRadioButton2.getText();
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void quitLB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLB4ActionPerformed
@@ -232,6 +294,41 @@ public class RegisterP extends javax.swing.JFrame {
         LiP.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_quitLB4ActionPerformed
+
+    private void usernameRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameRFActionPerformed
+        getContentPane().add(usernameRF);
+    }//GEN-LAST:event_usernameRFActionPerformed
+
+    private void passwordRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordRFActionPerformed
+        getContentPane().add(passwordRF);
+    }//GEN-LAST:event_passwordRFActionPerformed
+
+    private void firstnameRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstnameRFActionPerformed
+        getContentPane().add(firstnameRF);
+    }//GEN-LAST:event_firstnameRFActionPerformed
+
+    private void lastnameRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastnameRFActionPerformed
+        getContentPane().add(lastnameRF);
+    }//GEN-LAST:event_lastnameRFActionPerformed
+
+    private void emailRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailRFActionPerformed
+        getContentPane().add(emailRF);
+    }//GEN-LAST:event_emailRFActionPerformed
+
+    private void positionFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_positionFActionPerformed
+        getContentPane().add(positionF);
+        if (!positionF.getText().equals("")) {
+            position = positionF.getText();
+        }
+    }//GEN-LAST:event_positionFActionPerformed
+
+    private void IDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDFActionPerformed
+        getContentPane().add(IDF);
+    }//GEN-LAST:event_IDFActionPerformed
+
+    private void mobileFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mobileFActionPerformed
+        getContentPane().add(mobileF);
+    }//GEN-LAST:event_mobileFActionPerformed
 
     public static void main(String args[]) {
 
@@ -259,8 +356,10 @@ public class RegisterP extends javax.swing.JFrame {
         });
     }
 
+    private String position = "none";
+    private String role = "";
+    private User user = new User();
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea AddressA;
     private javax.swing.JTextField IDF;
     private javax.swing.JPasswordField cPasswordRF;
     private javax.swing.JTextField emailRF;
@@ -268,6 +367,7 @@ public class RegisterP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -278,9 +378,10 @@ public class RegisterP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField lastnameRF;
+    private javax.swing.JTextField mobileF;
     private javax.swing.JPasswordField passwordRF;
+    private javax.swing.JTextField positionF;
     private javax.swing.JButton quitLB4;
     private javax.swing.JButton resetRB;
     private javax.swing.JButton signupRB;

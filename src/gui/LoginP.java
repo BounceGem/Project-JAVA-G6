@@ -25,7 +25,8 @@ public class LoginP extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Facility Management");
-        setPreferredSize(new java.awt.Dimension(800, 625));
+        setAlwaysOnTop(true);
+        setLocationByPlatform(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -39,6 +40,11 @@ public class LoginP extends javax.swing.JFrame {
         usernameLIF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameLIFActionPerformed(evt);
+            }
+        });
+        usernameLIF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                usernameLIFKeyPressed(evt);
             }
         });
         getContentPane().add(usernameLIF, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 280, 30));
@@ -89,6 +95,7 @@ public class LoginP extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void usernameLIFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameLIFActionPerformed
@@ -129,6 +136,19 @@ public class LoginP extends javax.swing.JFrame {
         su.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_signupLIBActionPerformed
+
+    private void usernameLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_usernameLIFKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
+                LocationP lp02 = new LocationP();
+                lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                lp02.setVisible(true);
+                this.setVisible(false);
+            } else {
+                JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
+            }
+        }
+    }//GEN-LAST:event_usernameLIFKeyPressed
 
     public static void main(String args[]) {
 

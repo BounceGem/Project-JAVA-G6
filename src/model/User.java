@@ -3,7 +3,8 @@ package model;
 public class User {
 
     private long userId;
-    private String firstName, lastName, position, mobile, email, user, password;
+    private String firstName, lastName, position, mobile, email, user, password, role;
+    private static int count;
 
     public void login(String user, String pass) {
         if (user.equals(this.user) && password.equals(this.password)) {
@@ -15,7 +16,8 @@ public class User {
 
     }
 
-    public void register(String firstname, String lastname, String position, String mobile, String email, String user, String pass) {
+    public void register(String firstname, String lastname, String role, String position, String mobile, String email, String user, String pass) {
+        ++count;
         this.firstName = firstname;
         this.lastName = lastname;
         this.position = position;
@@ -23,6 +25,8 @@ public class User {
         this.email = email;
         this.user = user;
         this.password = pass;
+        this.role = role;
+        userId = count;
     }
 
     public long getUserId() {
@@ -91,7 +95,12 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" + "userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", position=" + position + ", mobile=" + mobile + ", email=" + email + ", user=" + user + ", password=" + password + '}';
+        return "User ID : " + userId
+                + "\nUsername : " + user + " Password : " + password
+                + "\nFirstName : " + firstName + " LastName : " + lastName
+                + "\nMobile : " + mobile
+                + "\nRole : " + role + " Position : " + position
+                + "\nEmail : " + email;
     }
 
 }
