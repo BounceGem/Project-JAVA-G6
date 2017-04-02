@@ -6,7 +6,7 @@ public class Maintain extends Place {
     private long maintainId;
     private User owner;
     private Place place;
-    private Location account;
+    private Account account;
     private Record record;
     private String status;
 
@@ -50,11 +50,11 @@ public class Maintain extends Place {
         this.place = place;
     }
 
-    public Location getAccount() {
+    public Account getAccount() {
         return account;
     }
 
-    public void setAccount(Location account) {
+    public void setAccount(Account account) {
         this.account = account;
     }
 

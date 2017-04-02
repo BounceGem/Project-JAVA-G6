@@ -1,6 +1,6 @@
 package gui;
 
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 import javax.swing.*;
 import model.*;
 
@@ -24,9 +24,8 @@ public class LoginP extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setAlwaysOnTop(true);
-        setLocation(new java.awt.Point(400, 120));
-        setPreferredSize(new java.awt.Dimension(800, 624));
+        setTitle("Facility Management");
+        setPreferredSize(new java.awt.Dimension(800, 625));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -100,6 +99,19 @@ public class LoginP extends javax.swing.JFrame {
         getContentPane().add(passwordLIF);
     }//GEN-LAST:event_passwordLIFActionPerformed
 
+    private void passwordLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordLIFKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
+                LocationP lp02 = new LocationP();
+                lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                lp02.setVisible(true);
+                this.setVisible(false);
+            } else {
+                JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
+            }
+        }
+    }//GEN-LAST:event_passwordLIFKeyPressed
+
     private void logiinLIBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logiinLIBActionPerformed
         if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
             LocationP lp01 = new LocationP();
@@ -117,19 +129,6 @@ public class LoginP extends javax.swing.JFrame {
         su.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_signupLIBActionPerformed
-
-    private void passwordLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordLIFKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
-                LocationP lp02 = new LocationP();
-                lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
-                lp02.setVisible(true);
-                this.setVisible(false);
-            } else {
-                JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
-            }
-        }
-    }//GEN-LAST:event_passwordLIFKeyPressed
 
     public static void main(String args[]) {
 

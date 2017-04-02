@@ -4,7 +4,7 @@ package model;
 public class Place {
 
     private String placeName, placeDescription;
-    private Location acccounnt;
+    private Account acccounnt;
 
     public void add(String locationName, String locationDescription) {
 
@@ -34,11 +34,11 @@ public class Place {
         this.placeDescription = placeDescription;
     }
 
-    public Location getAcccounnt() {
+    public Account getAcccounnt() {
         return acccounnt;
     }
 
-    public void setAcccounnt(Location acccounnt) {
+    public void setAcccounnt(Account acccounnt) {
         this.acccounnt = acccounnt;
     }
 
