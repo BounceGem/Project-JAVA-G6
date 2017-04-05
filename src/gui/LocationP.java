@@ -17,11 +17,12 @@ public class LocationP extends javax.swing.JFrame {
         LocaCB = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
         nextLB = new javax.swing.JButton();
-        quitLB4 = new javax.swing.JButton();
+        ProfileB = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         actionCB = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
         addLocaB = new javax.swing.JButton();
+        quitLB = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,17 +49,17 @@ public class LocationP extends javax.swing.JFrame {
         nextLB.setToolTipText("");
         getContentPane().add(nextLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 560, 100, 30));
 
-        quitLB4.setBackground(new java.awt.Color(102, 255, 204));
-        quitLB4.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        quitLB4.setForeground(new java.awt.Color(204, 51, 0));
-        quitLB4.setText("BACK");
-        quitLB4.setToolTipText("");
-        quitLB4.addActionListener(new java.awt.event.ActionListener() {
+        ProfileB.setBackground(new java.awt.Color(102, 255, 204));
+        ProfileB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        ProfileB.setForeground(new java.awt.Color(204, 51, 0));
+        ProfileB.setText("PROFILE");
+        ProfileB.setToolTipText("");
+        ProfileB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quitLB4ActionPerformed(evt);
+                ProfileBActionPerformed(evt);
             }
         });
-        getContentPane().add(quitLB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 560, 100, 30));
+        getContentPane().add(ProfileB, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 560, 100, 30));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 102, 51));
@@ -76,6 +77,18 @@ public class LocationP extends javax.swing.JFrame {
         addLocaB.setText("Add Location");
         getContentPane().add(addLocaB, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, 110, 30));
 
+        quitLB.setBackground(new java.awt.Color(102, 255, 204));
+        quitLB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        quitLB.setForeground(new java.awt.Color(204, 51, 0));
+        quitLB.setText("BACK");
+        quitLB.setToolTipText("");
+        quitLB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quitLBActionPerformed(evt);
+            }
+        });
+        getContentPane().add(quitLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 560, 100, 30));
+
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/map.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -83,12 +96,19 @@ public class LocationP extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void quitLB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLB4ActionPerformed
+    private void ProfileBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfileBActionPerformed
+        UserP UsP = new UserP();
+        UsP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        UsP.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_ProfileBActionPerformed
+
+    private void quitLBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLBActionPerformed
         LoginP LiP = new LoginP();
         LiP.setDefaultCloseOperation(EXIT_ON_CLOSE);
         LiP.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_quitLB4ActionPerformed
+    }//GEN-LAST:event_quitLBActionPerformed
 
     public static void main(String args[]) {
 
@@ -118,6 +138,7 @@ public class LocationP extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> LocaCB;
+    private javax.swing.JButton ProfileB;
     private javax.swing.JComboBox<String> actionCB;
     private javax.swing.JButton addLocaB;
     private javax.swing.JLabel jLabel2;
@@ -125,7 +146,7 @@ public class LocationP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton nextLB;
-    private javax.swing.JButton quitLB4;
+    private javax.swing.JButton quitLB;
     // End of variables declaration//GEN-END:variables
 
 }
