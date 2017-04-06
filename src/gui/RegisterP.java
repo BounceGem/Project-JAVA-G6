@@ -238,17 +238,17 @@ public class RegisterP extends javax.swing.JFrame {
 
     private void cPasswordRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cPasswordRFKeyReleased
         if (cPasswordRF.getText().equals(passwordRF.getText())) {
-            jLabel7.setText("รหัสตรงกัน");
+            jLabel7.setText("Compatible");
         } else {
-            jLabel7.setText("รหัสไม่ตรงกัน");
+            jLabel7.setText("Incompatible");
         }
     }//GEN-LAST:event_cPasswordRFKeyReleased
 
     private void passwordRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordRFKeyReleased
         if (cPasswordRF.getText().equals(passwordRF.getText())) {
-            jLabel7.setText("รหัสตรงกัน");
+            jLabel7.setText("Compatible");
         } else {
-            jLabel7.setText("รหัสไม่ตรงกัน");
+            jLabel7.setText("Incompatible");
         }
     }//GEN-LAST:event_passwordRFKeyReleased
 
