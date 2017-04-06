@@ -1,5 +1,8 @@
 package model;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class User {
 
     private long userId;
@@ -16,8 +19,9 @@ public class User {
 
     }
 
-    public void register(String firstname, String lastname, String role, String position, String mobile, String email, String user, String pass) {
-        ++count;
+    public void register(String firstname, String lastname, long userId, String role, String position, String mobile, String email, String user, String pass) throws SQLException {
+        PreparedStatement regis = ConnectionBuilder.getConnection().prepareStatement("insert into emp values(?,?,?)");
+
         this.firstName = firstname;
         this.lastName = lastname;
         this.position = position;
@@ -26,7 +30,7 @@ public class User {
         this.user = user;
         this.password = pass;
         this.role = role;
-        userId = count;
+        this.userId = userId;
     }
 
     public long getUserId() {

@@ -1,6 +1,9 @@
 package gui;
 
 import java.awt.event.*;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 import model.*;
 
@@ -253,8 +256,12 @@ public class RegisterP extends javax.swing.JFrame {
                     && !mobileF.getText().equals("") && !emailRF.getText().equals("")
                     && !usernameRF.getText().equals("") && !passwordRF.getText().equals("")
                     && !cPasswordRF.getText().equals("")) {
-                user.register(firstnameRF.getText(), lastnameRF.getText(), role, position, mobileF.getText(), emailRF.getText(), usernameRF.getText(), passwordRF.getText());
-                JOptionPane.showMessageDialog(this, user.toString(), "Test", JOptionPane.WARNING_MESSAGE);
+                try {
+                    user.register(firstnameRF.getText(), lastnameRF.getText(), Long.valueOf(IDF.getText()), role, position, mobileF.getText(), emailRF.getText(), usernameRF.getText(), passwordRF.getText());
+                    JOptionPane.showMessageDialog(this, user.toString(), "Test", JOptionPane.WARNING_MESSAGE);
+                } catch (SQLException ex) {
+                    System.err.println(ex);
+                }
             } else {
                 JOptionPane.showMessageDialog(this, "Please insert text in blank space", "Error!", JOptionPane.WARNING_MESSAGE);
             }
