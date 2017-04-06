@@ -1,6 +1,8 @@
 package gui;
 
 import java.awt.event.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,7 +21,6 @@ public class RegisterP extends javax.swing.JFrame {
 
         jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -35,13 +36,14 @@ public class RegisterP extends javax.swing.JFrame {
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
-        IDF = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         quitLB4 = new javax.swing.JButton();
         positionF = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         mobileF = new javax.swing.JTextField();
+        FacultyF = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -63,21 +65,17 @@ public class RegisterP extends javax.swing.JFrame {
         jLabel2.setText("REGISTER");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 170, 60));
 
-        jLabel1.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
-        jLabel1.setText("STUDENT ID OR STAFF ID");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, -1));
-
         jLabel3.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel3.setText("LASTNAME");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
-        jLabel4.setText("MOBILE");
+        jLabel4.setText("FACULTY");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, 70, -1));
 
         jLabel5.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel5.setText("E-MAIL");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel6.setText("USERNAME");
@@ -89,7 +87,7 @@ public class RegisterP extends javax.swing.JFrame {
                 emailRFActionPerformed(evt);
             }
         });
-        getContentPane().add(emailRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 250, 30));
+        getContentPane().add(emailRF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 250, 30));
 
         cPasswordRF.setBackground(new java.awt.Color(255, 219, 219));
         cPasswordRF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -180,14 +178,6 @@ public class RegisterP extends javax.swing.JFrame {
         jLabel8.setText("FIRSTNAME");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, -1, -1));
 
-        IDF.setBackground(new java.awt.Color(255, 219, 219));
-        IDF.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                IDFActionPerformed(evt);
-            }
-        });
-        getContentPane().add(IDF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 250, 30));
-
         jLabel9.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel9.setText("PASSWORD");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
@@ -213,11 +203,11 @@ public class RegisterP extends javax.swing.JFrame {
                 positionFActionPerformed(evt);
             }
         });
-        getContentPane().add(positionF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 250, 30));
+        getContentPane().add(positionF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 250, 30));
 
         jLabel12.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
         jLabel12.setText("POSITION");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 70, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 70, -1));
 
         mobileF.setBackground(new java.awt.Color(255, 219, 219));
         mobileF.addActionListener(new java.awt.event.ActionListener() {
@@ -225,7 +215,19 @@ public class RegisterP extends javax.swing.JFrame {
                 mobileFActionPerformed(evt);
             }
         });
-        getContentPane().add(mobileF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 250, 30));
+        getContentPane().add(mobileF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 250, 30));
+
+        FacultyF.setBackground(new java.awt.Color(255, 219, 219));
+        FacultyF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FacultyFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(FacultyF, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 250, 30));
+
+        jLabel13.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
+        jLabel13.setText("MOBILE");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 70, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/register.jpg"))); // NOI18N
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
@@ -254,10 +256,10 @@ public class RegisterP extends javax.swing.JFrame {
         if (jRadioButton1.isSelected() || jRadioButton2.isSelected()) {
             if (!firstnameRF.getText().equals("") && !lastnameRF.getText().equals("")
                     && !mobileF.getText().equals("") && !emailRF.getText().equals("")
-                    && !usernameRF.getText().equals("") && !passwordRF.getText().equals("")
-                    && !cPasswordRF.getText().equals("")) {
+                    && !usernameRF.getText().equals("") && !passwordRF.getPassword().equals("")
+                    && !cPasswordRF.getPassword().equals("")) {
                 try {
-                    user.register(firstnameRF.getText(), lastnameRF.getText(), Long.valueOf(IDF.getText()), role, position, mobileF.getText(), emailRF.getText(), usernameRF.getText(), passwordRF.getText());
+                    user.register(firstnameRF.getText(), lastnameRF.getText(), role, position, mobileF.getText(), emailRF.getText(), usernameRF.getText(), String.valueOf(passwordRF.getPassword()), FacultyF.getText());
                     JOptionPane.showMessageDialog(this, user.toString(), "Test", JOptionPane.WARNING_MESSAGE);
                 } catch (SQLException ex) {
                     System.err.println(ex);
@@ -274,7 +276,6 @@ public class RegisterP extends javax.swing.JFrame {
         jLabel7.setText("");
         jRadioButton1.setSelected(false);
         jRadioButton2.setSelected(false);
-        IDF.setText("");
         usernameRF.setText("");
         passwordRF.setText("");
         cPasswordRF.setText("");
@@ -303,23 +304,23 @@ public class RegisterP extends javax.swing.JFrame {
     }//GEN-LAST:event_quitLB4ActionPerformed
 
     private void usernameRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameRFActionPerformed
-        getContentPane().add(usernameRF);
+
     }//GEN-LAST:event_usernameRFActionPerformed
 
     private void passwordRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordRFActionPerformed
-        getContentPane().add(passwordRF);
+
     }//GEN-LAST:event_passwordRFActionPerformed
 
     private void firstnameRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstnameRFActionPerformed
-        getContentPane().add(firstnameRF);
+
     }//GEN-LAST:event_firstnameRFActionPerformed
 
     private void lastnameRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastnameRFActionPerformed
-        getContentPane().add(lastnameRF);
+
     }//GEN-LAST:event_lastnameRFActionPerformed
 
     private void emailRFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailRFActionPerformed
-        getContentPane().add(emailRF);
+
     }//GEN-LAST:event_emailRFActionPerformed
 
     private void positionFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_positionFActionPerformed
@@ -329,13 +330,13 @@ public class RegisterP extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_positionFActionPerformed
 
-    private void IDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDFActionPerformed
-        getContentPane().add(IDF);
-    }//GEN-LAST:event_IDFActionPerformed
-
     private void mobileFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mobileFActionPerformed
-        getContentPane().add(mobileF);
+
     }//GEN-LAST:event_mobileFActionPerformed
+
+    private void FacultyFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FacultyFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FacultyFActionPerformed
 
     public static void main(String args[]) {
 
@@ -346,13 +347,7 @@ public class RegisterP extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(RegisterP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(RegisterP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(RegisterP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(RegisterP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
 
@@ -363,18 +358,21 @@ public class RegisterP extends javax.swing.JFrame {
         });
     }
 
-    private String position = "none";
+    Connection con;
+    PreparedStatement ps;
+    private String position = "Student";
     private String role = "";
-    private User user = new User();
+    LoginP userLIP = new LoginP();
+    User user = new User();
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField IDF;
+    private javax.swing.JTextField FacultyF;
     private javax.swing.JPasswordField cPasswordRF;
     private javax.swing.JTextField emailRF;
     private javax.swing.JTextField firstnameRF;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

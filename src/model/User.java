@@ -1,13 +1,16 @@
 package model;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class User {
 
     private long userId;
-    private String firstName, lastName, position, mobile, email, user, password, role;
+    private String firstName, lastName, position, mobile, email, user, password, role, faculty;
     private static int count;
+    Connection con = ConnectionBuilder.getConnection();
 
     public void login(String user, String pass) {
         if (user.equals(this.user) && password.equals(this.password)) {
@@ -16,11 +19,22 @@ public class User {
     }
 
     public void logout() {
-
+        userId = 0;
     }
 
-    public void register(String firstname, String lastname, long userId, String role, String position, String mobile, String email, String user, String pass) throws SQLException {
-        PreparedStatement regis = ConnectionBuilder.getConnection().prepareStatement("insert into emp values(?,?,?)");
+    public void register(String firstname, String lastname, String role, String position, String mobile, String email, String user, String pass, String faculty) throws SQLException {
+        PreparedStatement regis
+                = con.prepareStatement("INSERT INTO `user` (`userid`, `firstname`, `lastname`, `mobile`, `role`, `username`, `password`, `position`, `faculty`) "
+                        + "VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?);");
+        regis.setString(1, firstname);
+        regis.setString(2, lastname);
+        regis.setString(3, mobile);
+        regis.setString(4, role);
+        regis.setString(5, user);
+        regis.setString(6, pass);
+        regis.setString(7, position);
+        regis.setString(8, faculty);
+        regis.executeUpdate();
 
         this.firstName = firstname;
         this.lastName = lastname;
@@ -30,7 +44,7 @@ public class User {
         this.user = user;
         this.password = pass;
         this.role = role;
-        this.userId = userId;
+        this.faculty = faculty;
     }
 
     public long getUserId() {
@@ -99,8 +113,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User ID : " + userId
-                + "\nUsername : " + user + " Password : " + password
+        return "Username : " + user + " Password : " + password
                 + "\nFirstName : " + firstName + " LastName : " + lastName
                 + "\nMobile : " + mobile
                 + "\nRole : " + role + " Position : " + position
