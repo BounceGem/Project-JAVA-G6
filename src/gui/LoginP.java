@@ -1,6 +1,10 @@
 package gui;
 
 import java.awt.event.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.*;
 import model.*;
 
@@ -21,6 +25,7 @@ public class LoginP extends javax.swing.JFrame {
         signupLIB = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,7 +55,7 @@ public class LoginP extends javax.swing.JFrame {
         getContentPane().add(usernameLIF, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 280, 30));
 
         passwordLIF.setBackground(new java.awt.Color(184, 218, 252));
-        passwordLIF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        passwordLIF.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         passwordLIF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordLIFActionPerformed(evt);
@@ -91,6 +96,14 @@ public class LoginP extends javax.swing.JFrame {
         jLabel3.setText("Password");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 349, 80, 30));
 
+        jCheckBox1.setText("Show Password");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 350, -1, -1));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/login.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -108,7 +121,7 @@ public class LoginP extends javax.swing.JFrame {
 
     private void passwordLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordLIFKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
+            if (usernameLIF.getText().equals("1") && passwordLIF.getPassword().equals("123")) {
                 LocationP lp02 = new LocationP();
                 lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
                 lp02.setVisible(true);
@@ -120,13 +133,23 @@ public class LoginP extends javax.swing.JFrame {
     }//GEN-LAST:event_passwordLIFKeyPressed
 
     private void logiinLIBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logiinLIBActionPerformed
-        if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
-            LocationP lp01 = new LocationP();
-            lp01.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            lp01.setVisible(true);
-            this.setVisible(false);
-        } else {
-            JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Error!", JOptionPane.WARNING_MESSAGE);
+        try {
+            PreparedStatement ps;
+            Connection con = ConnectionBuilder.getConnection();
+            ps = con.prepareStatement("SELECT `username`, `password` FROM `user` WHERE `username`=? AND `password`=?");
+            ps.setString(1, usernameLIF.getText());
+            ps.setString(2, String.valueOf(passwordLIF.getPassword()));
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                LocationP lp02 = new LocationP();
+                lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                lp02.setVisible(true);
+                this.setVisible(false);
+            } else {
+                JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex);
         }
     }//GEN-LAST:event_logiinLIBActionPerformed
 
@@ -139,7 +162,7 @@ public class LoginP extends javax.swing.JFrame {
 
     private void usernameLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_usernameLIFKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            if (usernameLIF.getText().equals("1") && passwordLIF.getText().equals("123")) {
+            if (usernameLIF.getText().equals("1") && passwordLIF.getPassword().equals("123")) {
                 LocationP lp02 = new LocationP();
                 lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
                 lp02.setVisible(true);
@@ -149,6 +172,14 @@ public class LoginP extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_usernameLIFKeyPressed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        if (jCheckBox1.isSelected()) {
+            passwordLIF.setEchoChar((char) 0);
+        } else {
+            passwordLIF.setEchoChar('*');
+        }
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     public static void main(String args[]) {
 
@@ -178,6 +209,7 @@ public class LoginP extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel NameL;
+    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
