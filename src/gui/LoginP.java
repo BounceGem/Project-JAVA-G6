@@ -155,6 +155,7 @@ public class LoginP extends javax.swing.JFrame {
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 user.setUserId(Long.valueOf(rs.getString("userid")));
+                user.setFirstName(rs.getString("firstname"));
                 JOptionPane.showMessageDialog(this, user.getUserId(), "UserID", JOptionPane.WARNING_MESSAGE);
                 LocationP lp02 = new LocationP();
                 lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -207,6 +208,10 @@ public class LoginP extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
+    public long getUser(){
+        return user.getUserId();
+    }
+    
     public static void main(String args[]) {
 
         try {

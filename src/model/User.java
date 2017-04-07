@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class User {
 
-    private long userId;
+    private long userId = 99;
     private String firstName, lastName, position, mobile, email, user, password, role, faculty;
     private static int count;
     Connection con = ConnectionBuilder.getConnection();

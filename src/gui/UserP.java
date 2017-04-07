@@ -35,6 +35,7 @@ public class UserP extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -63,6 +64,11 @@ public class UserP extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel4.setText("Firstname");
+        jLabel4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabel4PropertyChange(evt);
+            }
+        });
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -75,6 +81,11 @@ public class UserP extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel7.setText("Username");
+        jLabel7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabel7PropertyChange(evt);
+            }
+        });
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -117,6 +128,14 @@ public class UserP extends javax.swing.JFrame {
         jLabel17.setText("E-mail :");
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, -1));
 
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, -1, -1));
+
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/BgUser.jpg"))); // NOI18N
         jLabel18.setText("jLabel18");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -126,8 +145,20 @@ public class UserP extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel3PropertyChange
-        jLabel3.setText(String.valueOf(userLIP.user.getUserId()));
+        jLabel3.setText(String.valueOf(userLIP.getUser()));        
     }//GEN-LAST:event_jLabel3PropertyChange
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        JOptionPane.showMessageDialog(this, userLIP.getUser(), "UserID", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLabel7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel7PropertyChange
+        
+    }//GEN-LAST:event_jLabel7PropertyChange
+
+    private void jLabel4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel4PropertyChange
+        jLabel4.setText(String.valueOf(userLIP.user.getFirstName()));
+    }//GEN-LAST:event_jLabel4PropertyChange
 
     public static void main(String args[]) {
 
@@ -154,6 +185,7 @@ public class UserP extends javax.swing.JFrame {
     PreparedStatement ps;
     LoginP userLIP = new LoginP();
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
