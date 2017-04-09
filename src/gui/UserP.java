@@ -48,7 +48,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel2PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, -1, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, -1, 40));
 
         jLabel3.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 153, 255));
@@ -58,7 +58,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel3PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 70, 40));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 70, 40));
 
         jLabel4.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 255));
@@ -68,7 +68,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel4PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, -1, 50));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, -1, 50));
 
         jLabel5.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 255));
@@ -78,7 +78,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel5PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 280, -1, 40));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, -1, 40));
 
         jLabel7.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 153, 255));
@@ -88,7 +88,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel7PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, -1, 50));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, 50));
 
         jLabel8.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 255));
@@ -98,7 +98,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel8PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, -1, 40));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, 40));
 
         jLabel9.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 153, 255));
@@ -108,47 +108,47 @@ public class UserP extends javax.swing.JFrame {
                 jLabel9PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, -1, 40));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, -1, 40));
 
         jLabel10.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 255));
         jLabel10.setText("UserID :");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, -1, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 153, 255));
         jLabel11.setText("Username :");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 153, 255));
         jLabel12.setText("Firstname :");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 153, 255));
         jLabel13.setText("Lastname :");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, -1, -1));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 153, 255));
         jLabel14.setText("Role : ");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 153, 255));
         jLabel15.setText("Position :");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 153, 255));
         jLabel16.setText("Mobile :");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 440, -1, -1));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, -1, -1));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/profile_teaser2.png"))); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/profile_teaser2.png"))); // NOI18N
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 180, 140));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/ProfileText.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/ProfileText.png"))); // NOI18N
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 20, 800, 100));
 
@@ -172,7 +172,7 @@ public class UserP extends javax.swing.JFrame {
         jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 153, 255));
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/BgUser.jpg"))); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/BgUser.jpg"))); // NOI18N
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();

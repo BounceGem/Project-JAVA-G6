@@ -60,7 +60,7 @@ public class RegisterP extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 0, 102));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/RegisterT2.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/RegisterT2.png"))); // NOI18N
         jLabel2.setText("REGISTER");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 70));
 
@@ -182,7 +182,7 @@ public class RegisterP extends javax.swing.JFrame {
         FacultyF.setBackground(new java.awt.Color(255, 219, 219));
         getContentPane().add(FacultyF, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 250, 30));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/register-icon.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/register-icon.png"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, 150, 140));
 
         jLabel13.setFont(new java.awt.Font("Valken", 0, 12)); // NOI18N
@@ -193,7 +193,7 @@ public class RegisterP extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(255, 102, 153));
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, 100, 30));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/register.jpg"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/register.jpg"))); // NOI18N
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();
@@ -224,7 +224,8 @@ public class RegisterP extends javax.swing.JFrame {
         if (jRadioButton1.isSelected() || jRadioButton2.isSelected()) {
             if (!firstnameRF.getText().equals("") && !lastnameRF.getText().equals("")
                     && !mobileF.getText().equals("") && !usernameRF.getText().equals("")
-                    && !passwordRF.getPassword().equals("") && !cPasswordRF.getPassword().equals("")) {
+                    && !passwordRF.getPassword().equals("") && !cPasswordRF.getPassword().equals("")
+                    && !position.equals("")) {
                 try {
                     user.register(firstnameRF.getText(), lastnameRF.getText(), role, position, mobileF.getText(), usernameRF.getText(), String.valueOf(passwordRF.getPassword()), FacultyF.getText());
                     JOptionPane.showMessageDialog(this, user.toString(), "Test", JOptionPane.WARNING_MESSAGE);
@@ -259,6 +260,7 @@ public class RegisterP extends javax.swing.JFrame {
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         jRadioButton2.setSelected(false);
+        position = positionF.getText();
         role = jRadioButton1.getText();
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
