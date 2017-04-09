@@ -12,7 +12,7 @@ public class ConnectionBuilder {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://10.4.56.21:3306/facility", "facility", "facility");
         } catch (ClassNotFoundException | SQLException ex) {
-            System.err.println(ex);
+            System.err.println("!"+ex);
         }
         return conn;
     }
