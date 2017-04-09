@@ -2,11 +2,11 @@ package gui;
 
 public class LocationP extends javax.swing.JFrame {
 
-  public LocationP() {
-    initComponents();
-  }
+    public LocationP() {
+        initComponents();
+    }
 
-  @SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -267,6 +267,11 @@ public class LocationP extends javax.swing.JFrame {
         jButton35.setFont(new java.awt.Font("Segoe UI Light", 0, 13)); // NOI18N
         jButton35.setForeground(new java.awt.Color(0, 0, 255));
         jButton35.setText("Sit B");
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, -1, -1));
 
         jButton36.setFont(new java.awt.Font("Segoe UI Light", 0, 13)); // NOI18N
@@ -321,52 +326,52 @@ public class LocationP extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
     private void ProfileBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfileBActionPerformed
-      UserP UsP = new UserP();
-      UsP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-      UsP.setVisible(true);
-      this.setVisible(false);
+        UserP UsP = new UserP();
+        UsP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        UsP.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_ProfileBActionPerformed
-
     private void quitLBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLBActionPerformed
-      LoginP LiP = new LoginP();
-      LiP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-      LiP.setVisible(true);
-      this.setVisible(false);
+        LoginP LiP = new LoginP();
+        LiP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        LiP.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_quitLBActionPerformed
-
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton22ActionPerformed
-
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
-
     private void addLocaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addLocaBActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_addLocaBActionPerformed
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        SitB siB = new SitB();
+        siB.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        siB.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton35ActionPerformed
+    public static void main(String args[]) {
 
-  public static void main(String args[]) {
-
-    try {
-      for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-        if ("Nimbus".equals(info.getName())) {
-          javax.swing.UIManager.setLookAndFeel(info.getClassName());
-          break;
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(LocationP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-      }
-    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-      java.util.logging.Logger.getLogger(LocationP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    }
 
-    java.awt.EventQueue.invokeLater(new Runnable() {
-      public void run() {
-        new LocationP().setVisible(true);
-      }
-    });
-  }
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new LocationP().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ProfileB;

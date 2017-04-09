@@ -223,7 +223,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="15" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Staff"/>
+        <Property name="text" type="java.lang.String" value="staff"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1ActionPerformed"/>
@@ -239,7 +239,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="15" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Student"/>
+        <Property name="text" type="java.lang.String" value="student"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton2ActionPerformed"/>

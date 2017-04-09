@@ -6,11 +6,11 @@ import javax.swing.*;
 
 public class UserP extends javax.swing.JFrame {
 
-  public UserP() {
-    initComponents();
-  }
+    public UserP() {
+        initComponents();
+    }
 
-  @SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -40,7 +40,7 @@ public class UserP extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 153, 255));
         jLabel2.setText("Position");
         jLabel2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -48,9 +48,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel2PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, -1, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, -1, 40));
 
-        jLabel3.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 153, 255));
         jLabel3.setText("ID");
         jLabel3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -58,9 +58,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel3PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 70, 40));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 70, 40));
 
-        jLabel4.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 255));
         jLabel4.setText("Firstname");
         jLabel4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -68,9 +68,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel4PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, -1, 50));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, 50));
 
-        jLabel5.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 255));
         jLabel5.setText("Lastname");
         jLabel5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -78,9 +78,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel5PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, -1, 40));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 280, -1, 40));
 
-        jLabel7.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 153, 255));
         jLabel7.setText("Username");
         jLabel7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -88,9 +88,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel7PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, 50));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, 50));
 
-        jLabel8.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 255));
         jLabel8.setText("Role");
         jLabel8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -98,9 +98,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel8PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, 40));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 60, 40));
 
-        jLabel9.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 153, 255));
         jLabel9.setText("Mobile");
         jLabel9.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -108,39 +108,39 @@ public class UserP extends javax.swing.JFrame {
                 jLabel9PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, -1, 40));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, -1, 40));
 
-        jLabel10.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 255));
         jLabel10.setText("UserID :");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 153, 255));
         jLabel11.setText("Username :");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 153, 255));
         jLabel12.setText("Firstname :");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 153, 255));
         jLabel13.setText("Lastname :");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 153, 255));
         jLabel14.setText("Role : ");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 153, 255));
         jLabel15.setText("Position :");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("DilleniaUPC", 1, 36)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 153, 255));
         jLabel16.setText("Mobile :");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, -1, -1));
@@ -181,63 +181,63 @@ public class UserP extends javax.swing.JFrame {
 
 
     private void jLabel3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel3PropertyChange
-      jLabel3.setText(String.valueOf(LoginP.user.getUserId()));
+        jLabel3.setText(String.valueOf(LoginP.user.getUserId()));
     }//GEN-LAST:event_jLabel3PropertyChange
 
     private void jLabel7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel7PropertyChange
-      jLabel7.setText(LoginP.user.getUser());
+        jLabel7.setText(LoginP.user.getUser());
     }//GEN-LAST:event_jLabel7PropertyChange
 
     private void jLabel4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel4PropertyChange
-      jLabel4.setText(LoginP.user.getFirstName());
+        jLabel4.setText(LoginP.user.getFirstName());
     }//GEN-LAST:event_jLabel4PropertyChange
 
   private void jLabel5PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel5PropertyChange
-    jLabel5.setText(LoginP.user.getLastName());
+      jLabel5.setText(LoginP.user.getLastName());
   }//GEN-LAST:event_jLabel5PropertyChange
 
   private void jLabel8PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel8PropertyChange
-    jLabel8.setText(LoginP.user.getRole());
+      jLabel8.setText(LoginP.user.getRole());
   }//GEN-LAST:event_jLabel8PropertyChange
 
   private void jLabel2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel2PropertyChange
-    jLabel2.setText(LoginP.user.getPosition());
+      jLabel2.setText(LoginP.user.getPosition());
   }//GEN-LAST:event_jLabel2PropertyChange
 
   private void jLabel9PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel9PropertyChange
-    jLabel9.setText(LoginP.user.getMobile());
+      jLabel9.setText(LoginP.user.getMobile());
   }//GEN-LAST:event_jLabel9PropertyChange
 
   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    LocationP lp02 = new LocationP();
-    lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
-    lp02.setVisible(true);
-    this.setVisible(false);
+      LocationP lp02 = new LocationP();
+      lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
+      lp02.setVisible(true);
+      this.setVisible(false);
   }//GEN-LAST:event_jButton1ActionPerformed
 
-  public static void main(String args[]) {
+    public static void main(String args[]) {
 
-    try {
-      for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-        if ("Nimbus".equals(info.getName())) {
-          javax.swing.UIManager.setLookAndFeel(info.getClassName());
-          break;
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(UserP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-      }
-    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-      java.util.logging.Logger.getLogger(UserP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new UserP().setVisible(true);
+            }
+        });
     }
 
-    java.awt.EventQueue.invokeLater(new Runnable() {
-      @Override
-      public void run() {
-        new UserP().setVisible(true);
-      }
-    });
-  }
-
-  Connection con;
-  PreparedStatement ps;
+    Connection con;
+    PreparedStatement ps;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

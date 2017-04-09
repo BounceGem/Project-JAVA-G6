@@ -129,7 +129,7 @@ public class RegisterP extends javax.swing.JFrame {
         getContentPane().add(resetRB, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, 120, 40));
 
         jRadioButton1.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
-        jRadioButton1.setText("Staff");
+        jRadioButton1.setText("staff");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton1ActionPerformed(evt);
@@ -138,7 +138,7 @@ public class RegisterP extends javax.swing.JFrame {
         getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, -1, -1));
 
         jRadioButton2.setFont(new java.awt.Font("SansSerif", 1, 15)); // NOI18N
-        jRadioButton2.setText("Student");
+        jRadioButton2.setText("student");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
@@ -266,7 +266,7 @@ public class RegisterP extends javax.swing.JFrame {
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
         jRadioButton1.setSelected(false);
-        position = "Student";
+        position = "student";
         role = jRadioButton2.getText();
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
