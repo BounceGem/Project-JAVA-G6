@@ -146,11 +146,10 @@ public class UserP extends javax.swing.JFrame {
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, -1, -1));
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/profile_teaser2.png"))); // NOI18N
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 180, 140));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 190, 130));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/ProfileText.png"))); // NOI18N
-        jLabel6.setText("jLabel6");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 20, 800, 100));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, 40, 550, 100));
 
         jButton1.setBackground(new java.awt.Color(204, 204, 255));
         jButton1.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N
@@ -172,7 +171,7 @@ public class UserP extends javax.swing.JFrame {
         jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 153, 255));
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/BgUser.jpg"))); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/tg6.jpg"))); // NOI18N
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();
