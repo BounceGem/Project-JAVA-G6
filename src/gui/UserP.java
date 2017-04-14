@@ -48,7 +48,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel2PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, -1, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 130, 40));
 
         jLabel3.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 153, 255));
@@ -58,7 +58,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel3PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 70, 40));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 90, 40));
 
         jLabel4.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 255));
@@ -68,7 +68,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel4PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, 50));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 140, 50));
 
         jLabel5.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 255));
@@ -78,7 +78,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel5PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 280, -1, 40));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 280, 160, 40));
 
         jLabel7.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 153, 255));
@@ -88,7 +88,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel7PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, 50));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, 140, 50));
 
         jLabel8.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 255));
@@ -98,7 +98,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel8PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 60, 40));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 110, 40));
 
         jLabel9.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 153, 255));
@@ -108,7 +108,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel9PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, -1, 40));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 130, 40));
 
         jLabel10.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 255));
