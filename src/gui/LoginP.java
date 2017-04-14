@@ -105,34 +105,31 @@ public class LoginP extends javax.swing.JFrame {
 
     private void passwordLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordLIFKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            try {
-                con = ConnectionBuilder.getConnection();
-                ps = con.prepareStatement("SELECT * FROM `user` WHERE `username`=? AND `password`=?");
-                ps.setString(1, usernameLIF.getText());
-                ps.setString(2, String.valueOf(passwordLIF.getPassword()));
-                ResultSet rs = ps.executeQuery();
-                if (rs.next()) {
-                    User.orm(rs, user);
-                    LocationP lp02 = new LocationP();
-                    lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
-                    lp02.setVisible(true);
-                    this.setVisible(false);
-                } else {
-                    JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
-                }
-            } catch (SQLException ex) {
-                System.err.println(ex);
-            } finally {
-                try {
-                    con.close();
-                } catch (SQLException ex) {
-                    System.err.println(ex);
-                }
-            }
+            nextP();
         }
     }//GEN-LAST:event_passwordLIFKeyPressed
-
     private void logiinLIBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logiinLIBActionPerformed
+        nextP();
+    }//GEN-LAST:event_logiinLIBActionPerformed
+    private void signupLIBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupLIBActionPerformed
+        RegisterP su = new RegisterP();
+        su.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        su.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_signupLIBActionPerformed
+    private void usernameLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_usernameLIFKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            nextP();
+        }
+    }//GEN-LAST:event_usernameLIFKeyPressed
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        if (jCheckBox1.isSelected()) {
+            passwordLIF.setEchoChar((char) 0);
+        } else {
+            passwordLIF.setEchoChar('*');
+        }
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    public void nextP() {
         try {
             con = ConnectionBuilder.getConnection();
             ps = con.prepareStatement("SELECT * FROM `user` WHERE `username`=? AND `password`=?");
@@ -157,51 +154,7 @@ public class LoginP extends javax.swing.JFrame {
                 System.err.println(ex);
             }
         }
-    }//GEN-LAST:event_logiinLIBActionPerformed
-
-    private void signupLIBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupLIBActionPerformed
-        RegisterP su = new RegisterP();
-        su.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        su.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_signupLIBActionPerformed
-
-    private void usernameLIFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_usernameLIFKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            try {
-                con = ConnectionBuilder.getConnection();
-                ps = con.prepareStatement("SELECT * FROM `user` WHERE `username`=? AND `password`=?");
-                ps.setString(1, usernameLIF.getText());
-                ps.setString(2, String.valueOf(passwordLIF.getPassword()));
-                ResultSet rs = ps.executeQuery();
-                if (rs.next()) {
-                    User.orm(rs, user);
-                    LocationP lp02 = new LocationP();
-                    lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
-                    lp02.setVisible(true);
-                    this.setVisible(false);
-                } else {
-                    JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
-                }
-            } catch (SQLException ex) {
-                System.err.println(ex);
-            } finally {
-                try {
-                    con.close();
-                } catch (SQLException ex) {
-                    System.err.println(ex);
-                }
-            }
-        }
-    }//GEN-LAST:event_usernameLIFKeyPressed
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        if (jCheckBox1.isSelected()) {
-            passwordLIF.setEchoChar((char) 0);
-        } else {
-            passwordLIF.setEchoChar('*');
-        }
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }
 
     public static void main(String args[]) {
 
