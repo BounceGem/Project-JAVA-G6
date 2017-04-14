@@ -619,33 +619,18 @@ public class LocationP extends javax.swing.JFrame {
     }//GEN-LAST:event_quitLBActionPerformed
     private void canteenBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_canteenBActionPerformed
         place.setPlaceName("Canteen");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_canteenBActionPerformed
     private void cb3BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb3BActionPerformed
         place.setPlaceName("CB3");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_cb3BActionPerformed
     private void addLocaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addLocaBActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_addLocaBActionPerformed
     private void sitBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sitBActionPerformed
         place.setPlaceName("School of Infomation Technology");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_sitBActionPerformed
     private void productEBMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productEBMouseEntered
         productEB.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -655,12 +640,7 @@ public class LocationP extends javax.swing.JFrame {
     }//GEN-LAST:event_fullmapBActionPerformed
     private void presidentBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_presidentBActionPerformed
         place.setPlaceName("Office of The President");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_presidentBActionPerformed
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         jPanel1.setSize(0, 0);
@@ -670,294 +650,143 @@ public class LocationP extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
     private void cb4BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb4BActionPerformed
         place.setPlaceName("Classroom Building 4");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_cb4BActionPerformed
     private void cb5BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb5BActionPerformed
         place.setPlaceName("Classroom Building 5");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_cb5BActionPerformed
-
     private void envBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_envBActionPerformed
         place.setPlaceName("School of Enegy, Environment and Materials");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_envBActionPerformed
     private void emWorkshopBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emWorkshopBActionPerformed
         place.setPlaceName("Energy and Materials Workshop");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_emWorkshopBActionPerformed
     private void dhamma1BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dhamma1BActionPerformed
         place.setPlaceName("Domitory Female");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_dhamma1BActionPerformed
 
     private void dhamma2BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dhamma2BActionPerformed
         place.setPlaceName("Domitory Male");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_dhamma2BActionPerformed
     private void engBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_engBActionPerformed
         place.setPlaceName("Engineering Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_engBActionPerformed
     private void chemEBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chemEBActionPerformed
         place.setPlaceName("Chemical Engineering Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_chemEBActionPerformed
     private void innovativeBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_innovativeBActionPerformed
         place.setPlaceName("Darunsikkhalai School");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_innovativeBActionPerformed
     private void seminarBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seminarBActionPerformed
         place.setPlaceName("Seminar Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_seminarBActionPerformed
     private void p14BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p14BActionPerformed
         place.setPlaceName("P14");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_p14BActionPerformed
     private void meBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meBActionPerformed
         place.setPlaceName("Mechanical ENG. Building 4");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_meBActionPerformed
     private void productEBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productEBActionPerformed
         place.setPlaceName("Production ENG. Building 5");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_productEBActionPerformed
     private void cb1BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb1BActionPerformed
         place.setPlaceName("Classroom Building 1");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_cb1BActionPerformed
     private void cb2BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb2BActionPerformed
         place.setPlaceName("Classroom Building 2");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_cb2BActionPerformed
     private void utoBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_utoBActionPerformed
         place.setPlaceName("UTO");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_utoBActionPerformed
     private void solaBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_solaBActionPerformed
         place.setPlaceName("School of Liberal Arts");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_solaBActionPerformed
     private void bgDivBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bgDivBActionPerformed
         place.setPlaceName("Building and Grounds Division");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_bgDivBActionPerformed
     private void storeBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_storeBActionPerformed
         place.setPlaceName("Cooperative Store Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_storeBActionPerformed
     private void greenSBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_greenSBActionPerformed
         place.setPlaceName("Green Society");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_greenSBActionPerformed
     private void hivoltBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hivoltBActionPerformed
         place.setPlaceName("Hi-Voltage Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_hivoltBActionPerformed
     private void recycleBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recycleBActionPerformed
         place.setPlaceName("Recycle Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_recycleBActionPerformed
     private void maintananceBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maintananceBActionPerformed
         place.setPlaceName("Maintenance and Service center");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_maintananceBActionPerformed
     private void plantBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plantBActionPerformed
         place.setPlaceName("Nursery Plant");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_plantBActionPerformed
     private void libraryBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_libraryBActionPerformed
         place.setPlaceName("Library Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_libraryBActionPerformed
     private void sciCenterBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sciCenterBActionPerformed
         place.setPlaceName("Scientic Intrumentation Center");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_sciCenterBActionPerformed
     private void mathBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mathBActionPerformed
         place.setPlaceName("Department of Mathematic Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_mathBActionPerformed
     private void phyBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phyBActionPerformed
         place.setPlaceName("Department of Physics Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_phyBActionPerformed
     private void chemBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chemBActionPerformed
         place.setPlaceName("Chemistry Department Building (old)");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_chemBActionPerformed
     private void microBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_microBActionPerformed
         place.setPlaceName("Microbiology Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_microBActionPerformed
     private void sciLabBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sciLabBActionPerformed
         place.setPlaceName("Fundamental Science Laboratory Building");
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
-            this.setVisible(false);
-        }
+        nextP();
     }//GEN-LAST:event_sciLabBActionPerformed
     private void fiboBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fiboBActionPerformed
         place.setPlaceName("Institutde of Field Robotics");
+        nextP();
+    }//GEN-LAST:event_fiboBActionPerformed
+    public void nextP() {
         if (type.equalsIgnoreCase("repair")) {
             RepairP riP = new RepairP();
             riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
             riP.setVisible(true);
             this.setVisible(false);
+        } else if (type.equalsIgnoreCase("finance")) {
+
         }
-    }//GEN-LAST:event_fiboBActionPerformed
+    }
 
     public static void main(String args[]) {
 
