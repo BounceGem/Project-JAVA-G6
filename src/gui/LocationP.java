@@ -571,13 +571,13 @@ public class LocationP extends javax.swing.JFrame {
 
         jComboBox1.setFont(new java.awt.Font("Segoe UI Light", 0, 20)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(255, 102, 51));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Repair", "Finance" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Maintain", "Transaction" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 100, -1));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 130, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/locationIcon.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, -10, 90, 90));
@@ -778,10 +778,10 @@ public class LocationP extends javax.swing.JFrame {
         nextP();
     }//GEN-LAST:event_fiboBActionPerformed
     public void nextP() {
-        if (type.equalsIgnoreCase("repair")) {
-            RepairP riP = new RepairP();
-            riP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            riP.setVisible(true);
+        if (type.equalsIgnoreCase("Maintain")) {
+            MaintainP matP = new MaintainP();
+            matP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+            matP.setVisible(true);
             this.setVisible(false);
         } else if (type.equalsIgnoreCase("finance")) {
 

@@ -1,8 +1,8 @@
 package gui;
 
-public class RepairP extends javax.swing.JFrame {
+public class MaintainP extends javax.swing.JFrame {
 
-    public RepairP() {
+    public MaintainP() {
         initComponents();
     }
 
@@ -36,9 +36,7 @@ public class RepairP extends javax.swing.JFrame {
         setAlwaysOnTop(true);
         setLocationByPlatform(true);
         setMaximizedBounds(new java.awt.Rectangle(800, 600, 800, 600));
-        setMaximumSize(new java.awt.Dimension(800, 600));
         setMinimumSize(new java.awt.Dimension(800, 600));
-        setPreferredSize(new java.awt.Dimension(800, 625));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -164,12 +162,12 @@ public class RepairP extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(RepairP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MaintainP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new RepairP().setVisible(true);
+                new MaintainP().setVisible(true);
             }
         });
     }
