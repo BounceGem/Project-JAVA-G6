@@ -182,31 +182,24 @@ public class UserP extends javax.swing.JFrame {
     private void jLabel3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel3PropertyChange
         jLabel3.setText(String.valueOf(LoginP.user.getUserId()));
     }//GEN-LAST:event_jLabel3PropertyChange
-
     private void jLabel7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel7PropertyChange
         jLabel7.setText(LoginP.user.getUser());
     }//GEN-LAST:event_jLabel7PropertyChange
-
     private void jLabel4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel4PropertyChange
         jLabel4.setText(LoginP.user.getFirstName());
     }//GEN-LAST:event_jLabel4PropertyChange
-
   private void jLabel5PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel5PropertyChange
       jLabel5.setText(LoginP.user.getLastName());
   }//GEN-LAST:event_jLabel5PropertyChange
-
   private void jLabel8PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel8PropertyChange
       jLabel8.setText(LoginP.user.getRole());
   }//GEN-LAST:event_jLabel8PropertyChange
-
   private void jLabel2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel2PropertyChange
       jLabel2.setText(LoginP.user.getPosition());
   }//GEN-LAST:event_jLabel2PropertyChange
-
   private void jLabel9PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel9PropertyChange
       jLabel9.setText(LoginP.user.getMobile());
   }//GEN-LAST:event_jLabel9PropertyChange
-
   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
       LocationP lp02 = new LocationP();
       lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
