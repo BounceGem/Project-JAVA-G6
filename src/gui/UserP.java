@@ -68,7 +68,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel4PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 140, 50));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 140, 60));
 
         jLabel5.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 255));
@@ -88,7 +88,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel7PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, 140, 50));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 140, 60));
 
         jLabel8.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 255));
