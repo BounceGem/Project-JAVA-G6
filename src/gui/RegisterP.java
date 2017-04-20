@@ -50,7 +50,9 @@ public class RegisterP extends javax.swing.JFrame {
         setTitle("Facility Management");
         setAlwaysOnTop(true);
         setLocationByPlatform(true);
-        setMinimumSize(new java.awt.Dimension(800, 600));
+        setMaximumSize(new java.awt.Dimension(800, 625));
+        setMinimumSize(new java.awt.Dimension(800, 625));
+        setPreferredSize(new java.awt.Dimension(800, 625));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

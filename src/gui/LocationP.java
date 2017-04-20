@@ -68,9 +68,9 @@ public class LocationP extends javax.swing.JFrame {
         setTitle("Facility Management");
         setAlwaysOnTop(true);
         setLocationByPlatform(true);
-        setMaximumSize(new java.awt.Dimension(800, 600));
-        setMinimumSize(new java.awt.Dimension(800, 600));
-        setPreferredSize(new java.awt.Dimension(800, 635));
+        setMaximumSize(new java.awt.Dimension(800, 625));
+        setMinimumSize(new java.awt.Dimension(800, 625));
+        setPreferredSize(new java.awt.Dimension(800, 625));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -783,8 +783,11 @@ public class LocationP extends javax.swing.JFrame {
             matP.setDefaultCloseOperation(EXIT_ON_CLOSE);
             matP.setVisible(true);
             this.setVisible(false);
-        } else if (type.equalsIgnoreCase("finance")) {
-
+        } else if (type.equalsIgnoreCase("Transaction")) {
+            TransactionP TraP = new TransactionP();
+            TraP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+            TraP.setVisible(true);
+            this.setVisible(false);
         }
     }
 
@@ -808,7 +811,7 @@ public class LocationP extends javax.swing.JFrame {
         });
     }
 
-    public static String type = "repair";
+    public static String type = "maintain";
     public static Place place = new Place();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ProfileB;

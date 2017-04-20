@@ -37,6 +37,9 @@ public class UserP extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Facility Management");
         setLocationByPlatform(true);
+        setMaximumSize(new java.awt.Dimension(800, 625));
+        setMinimumSize(new java.awt.Dimension(800, 625));
+        setPreferredSize(new java.awt.Dimension(800, 625));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
