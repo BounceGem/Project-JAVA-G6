@@ -80,9 +80,9 @@ public class AdminP extends javax.swing.JFrame {
         jLabel3.setText("Place id");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
 
-        quitLB1.setBackground(new java.awt.Color(102, 255, 204));
+        quitLB1.setBackground(new java.awt.Color(255, 204, 204));
         quitLB1.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        quitLB1.setForeground(new java.awt.Color(204, 51, 0));
+        quitLB1.setForeground(new java.awt.Color(153, 0, 255));
         quitLB1.setText("BACK");
         quitLB1.setToolTipText("");
         quitLB1.addActionListener(new java.awt.event.ActionListener() {

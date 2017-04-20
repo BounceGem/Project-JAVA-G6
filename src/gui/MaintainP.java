@@ -86,11 +86,15 @@ public class MaintainP extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 500, 40));
 
-        jButton1.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(255, 204, 204));
+        jButton1.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(204, 0, 51));
         jButton1.setText("SUBMIT");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 550, -1, 30));
 
-        jButton2.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(255, 204, 204));
+        jButton2.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(204, 0, 51));
         jButton2.setText("BACK");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
