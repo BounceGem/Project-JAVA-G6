@@ -14,10 +14,6 @@ public class LocationP extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jLabel5 = new javax.swing.JLabel();
         ProfileB = new javax.swing.JButton();
         seminarB = new javax.swing.JButton();
         innovativeB = new javax.swing.JButton();
@@ -73,23 +69,6 @@ public class LocationP extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(800, 625));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton1.setText("Back");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 540, 80, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/fullmap.png"))); // NOI18N
-        jScrollPane1.setViewportView(jLabel5);
-
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 0));
 
         ProfileB.setBackground(new java.awt.Color(102, 255, 204));
         ProfileB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
@@ -636,15 +615,15 @@ public class LocationP extends javax.swing.JFrame {
         productEB.setCursor(new Cursor(Cursor.HAND_CURSOR));
     }//GEN-LAST:event_productEBMouseEntered
     private void fullmapBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fullmapBActionPerformed
-        jPanel1.setSize(800, 600);
+        FullmapP FmP = new FullmapP();
+        FmP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        FmP.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_fullmapBActionPerformed
     private void presidentBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_presidentBActionPerformed
         place.setPlaceName("Office of The President");
         nextP();
     }//GEN-LAST:event_presidentBActionPerformed
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jPanel1.setSize(0, 0);
-    }//GEN-LAST:event_jButton1ActionPerformed
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         type = (String) jComboBox1.getSelectedItem();
     }//GEN-LAST:event_jComboBox1ActionPerformed
@@ -835,15 +814,11 @@ public class LocationP extends javax.swing.JFrame {
     private javax.swing.JButton greenSB;
     private javax.swing.JButton hivoltB;
     private javax.swing.JButton innovativeB;
-    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton libraryB;
     private javax.swing.JButton maintananceB;
     private javax.swing.JButton mathB;
