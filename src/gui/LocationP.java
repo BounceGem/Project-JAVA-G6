@@ -5,11 +5,11 @@ import javax.swing.JOptionPane;
 import model.*;
 
 public class LocationP extends javax.swing.JFrame {
-
+    
     public LocationP() {
         initComponents();
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -58,6 +58,7 @@ public class LocationP extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         fullmapB = new javax.swing.JButton();
+        adminB = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -576,6 +577,25 @@ public class LocationP extends javax.swing.JFrame {
         });
         getContentPane().add(fullmapB, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 550, 100, 30));
 
+        adminB.setBackground(new java.awt.Color(102, 255, 204));
+        adminB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        adminB.setForeground(new java.awt.Color(204, 51, 0));
+        adminB.setToolTipText("");
+        adminB.setBorderPainted(false);
+        adminB.setContentAreaFilled(false);
+        adminB.setEnabled(false);
+        adminB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adminBActionPerformed(evt);
+            }
+        });
+        adminB.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                adminBPropertyChange(evt);
+            }
+        });
+        getContentPane().add(adminB, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 510, 100, 30));
+
         jLabel4.setFont(new java.awt.Font("Segoe UI Light", 0, 13)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/map.png"))); // NOI18N
@@ -756,6 +776,19 @@ public class LocationP extends javax.swing.JFrame {
         place.setPlaceName("Institutde of Field Robotics");
         nextP();
     }//GEN-LAST:event_fiboBActionPerformed
+    private void adminBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminBActionPerformed
+        AdminP admP = new AdminP();
+        admP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        admP.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_adminBActionPerformed
+    private void adminBPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_adminBPropertyChange
+        if (LoginP.user.getRole().equalsIgnoreCase("Staff")) {
+            adminB.setContentAreaFilled(true);
+            adminB.setEnabled(true);
+            adminB.setText("ADMIN");
+        }
+    }//GEN-LAST:event_adminBPropertyChange
     public void nextP() {
         if (type.equalsIgnoreCase("Maintain")) {
             MaintainP matP = new MaintainP();
@@ -769,9 +802,9 @@ public class LocationP extends javax.swing.JFrame {
             this.setVisible(false);
         }
     }
-
+    
     public static void main(String args[]) {
-
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -782,19 +815,20 @@ public class LocationP extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(LocationP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new LocationP().setVisible(true);
             }
         });
     }
-
+    
     public static String type = "maintain";
     public static Place place = new Place();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ProfileB;
     private javax.swing.JButton addLocaB;
+    private javax.swing.JButton adminB;
     private javax.swing.JButton bgDivB;
     private javax.swing.JButton canteenB;
     private javax.swing.JButton cb1B;
