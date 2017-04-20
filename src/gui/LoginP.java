@@ -180,7 +180,6 @@ public class LoginP extends javax.swing.JFrame {
 
     Connection con;
     PreparedStatement ps;
-    PreparedStatement ps2;
     public static User user = new User();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel NameL;

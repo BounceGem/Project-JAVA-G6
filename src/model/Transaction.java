@@ -1,6 +1,5 @@
 package model;
 
-
 import java.util.Date;
 import java.util.HashMap;
 
@@ -16,7 +15,7 @@ public class Transaction extends Account {
         return "";
     }
 
-    public void query() {
+    public void queryTransaction() {
 
     }
 

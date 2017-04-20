@@ -211,7 +211,6 @@ public class RegisterP extends javax.swing.JFrame {
             signupRB.setEnabled(false);
         }
     }//GEN-LAST:event_cPasswordRFKeyReleased
-
     private void passwordRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordRFKeyReleased
         if (cPasswordRF.getText().equals(passwordRF.getText())) {
             jLabel7.setText("Compatible");
@@ -221,7 +220,6 @@ public class RegisterP extends javax.swing.JFrame {
             signupRB.setEnabled(false);
         }
     }//GEN-LAST:event_passwordRFKeyReleased
-
     private void signupRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupRBActionPerformed
         if (jRadioButton1.isSelected() || jRadioButton2.isSelected()) {
             if (!firstnameRF.getText().equals("") && !lastnameRF.getText().equals("")
@@ -245,7 +243,6 @@ public class RegisterP extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Please select Staff or Student", "Error!", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_signupRBActionPerformed
-
     private void resetRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetRBActionPerformed
         jLabel7.setText("");
         jRadioButton1.setSelected(false);
@@ -259,26 +256,22 @@ public class RegisterP extends javax.swing.JFrame {
         mobileF.setText("");
         jLabel14.setText("");
     }//GEN-LAST:event_resetRBActionPerformed
-
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         jRadioButton2.setSelected(false);
         position = positionF.getText();
         role = jRadioButton1.getText();
     }//GEN-LAST:event_jRadioButton1ActionPerformed
-
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
         jRadioButton1.setSelected(false);
         position = "student";
         role = jRadioButton2.getText();
     }//GEN-LAST:event_jRadioButton2ActionPerformed
-
     private void quitLB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLB4ActionPerformed
         LoginP LiP = new LoginP();
         LiP.setDefaultCloseOperation(EXIT_ON_CLOSE);
         LiP.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_quitLB4ActionPerformed
-
   private void usernameRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_usernameRFKeyReleased
       con = ConnectionBuilder.getConnection();
       try {

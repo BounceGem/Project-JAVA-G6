@@ -1,15 +1,17 @@
 package gui;
 
 import java.awt.*;
-import javax.swing.JOptionPane;
+import java.sql.*;
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import javax.swing.*;
 import model.*;
 
 public class LocationP extends javax.swing.JFrame {
-    
+
     public LocationP() {
         initComponents();
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -314,7 +316,7 @@ public class LocationP extends javax.swing.JFrame {
                 productEBActionPerformed(evt);
             }
         });
-        getContentPane().add(productEB, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 256, 10, 20));
+        getContentPane().add(productEB, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 256, 20, 20));
 
         cb1B.setFont(new java.awt.Font("Segoe UI Light", 0, 13)); // NOI18N
         cb1B.setForeground(new java.awt.Color(204, 0, 0));
@@ -791,20 +793,80 @@ public class LocationP extends javax.swing.JFrame {
     }//GEN-LAST:event_adminBPropertyChange
     public void nextP() {
         if (type.equalsIgnoreCase("Maintain")) {
-            MaintainP matP = new MaintainP();
-            matP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            matP.setVisible(true);
-            this.setVisible(false);
+            try {
+                con = ConnectionBuilder.getConnection();
+                ps = con.prepareStatement("SELECT * FROM place WHERE placename=?");
+                ps.setString(1, place.getPlaceName());
+                ResultSet rs = ps.executeQuery();
+                if (rs.next()) {
+                    Place.orm(rs, place);
+                    getAccount();
+                    MaintainP matP = new MaintainP();
+                    matP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                    matP.setVisible(true);
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Place Not found!", "Test", JOptionPane.WARNING_MESSAGE);
+                }
+            } catch (SQLException ex) {
+                System.err.println(ex);
+            } finally {
+                try {
+                    con.close();
+                } catch (SQLException ex) {
+                    System.err.println(ex);
+                }
+            }
         } else if (type.equalsIgnoreCase("Transaction")) {
-            TransactionP TraP = new TransactionP();
-            TraP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            TraP.setVisible(true);
-            this.setVisible(false);
+            try {
+                con = ConnectionBuilder.getConnection();
+                ps = con.prepareStatement("SELECT * FROM place WHERE placename=?");
+                ps.setString(1, place.getPlaceName());
+                ResultSet rs = ps.executeQuery();
+                if (rs.next()) {
+                    Place.orm(rs, place);
+                    getAccount();
+                    TransactionP TraP = new TransactionP();
+                    TraP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+                    TraP.setVisible(true);
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Place Not found!", "Test", JOptionPane.WARNING_MESSAGE);
+                }
+            } catch (SQLException ex) {
+                System.err.println(ex);
+            } finally {
+                try {
+                    con.close();
+                } catch (SQLException ex) {
+                    System.err.println(ex);
+                }
+            }
         }
     }
-    
+
+    public void getAccount() {
+        try {
+            con = ConnectionBuilder.getConnection();
+            ps2 = con.prepareStatement("SELECT * FROM account WHERE placeid=?");
+            ps2.setString(1, String.valueOf(place.getPlaceId()));
+            ResultSet rs2 = ps2.executeQuery();
+            if (rs2.next()) {
+                Account.orm(rs2, account);
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex);
+        } finally {
+            try {
+                con.close();
+            } catch (SQLException ex) {
+                System.err.println(ex);
+            }
+        }
+    }
+
     public static void main(String args[]) {
-        
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -815,14 +877,18 @@ public class LocationP extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(LocationP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new LocationP().setVisible(true);
             }
         });
     }
-    
+
+    Connection con;
+    PreparedStatement ps;
+    PreparedStatement ps2;
+    public static Account account = new Account();
     public static String type = "maintain";
     public static Place place = new Place();
     // Variables declaration - do not modify//GEN-BEGIN:variables

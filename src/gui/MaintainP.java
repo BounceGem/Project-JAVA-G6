@@ -145,7 +145,6 @@ public class MaintainP extends javax.swing.JFrame {
     private void jLabel12PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel12PropertyChange
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel12PropertyChange
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         LocationP lp02 = new LocationP();
         lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
