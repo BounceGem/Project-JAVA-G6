@@ -28,7 +28,6 @@ public class UserP extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -43,7 +42,7 @@ public class UserP extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 153, 255));
         jLabel2.setText("Position");
         jLabel2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -51,9 +50,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel2PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 130, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 130, 30));
 
-        jLabel3.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 153, 255));
         jLabel3.setText("ID");
         jLabel3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -61,9 +60,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel3PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 90, 40));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 90, 30));
 
-        jLabel4.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 255));
         jLabel4.setText("Firstname");
         jLabel4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -71,9 +70,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel4PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 140, 60));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 140, 50));
 
-        jLabel5.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 255));
         jLabel5.setText("Lastname");
         jLabel5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -81,9 +80,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel5PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 280, 160, 40));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 260, 30));
 
-        jLabel7.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 153, 255));
         jLabel7.setText("Username");
         jLabel7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -91,9 +90,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel7PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 140, 60));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 140, 50));
 
-        jLabel8.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 255));
         jLabel8.setText("Role");
         jLabel8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -101,9 +100,9 @@ public class UserP extends javax.swing.JFrame {
                 jLabel8PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 110, 40));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 110, 30));
 
-        jLabel9.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 153, 255));
         jLabel9.setText("Mobile");
         jLabel9.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -111,48 +110,45 @@ public class UserP extends javax.swing.JFrame {
                 jLabel9PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 130, 40));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 130, 30));
 
-        jLabel10.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 255));
         jLabel10.setText("UserID :");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, -1, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 153, 255));
         jLabel11.setText("Username :");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 153, 255));
         jLabel12.setText("Firstname :");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 153, 255));
         jLabel13.setText("Lastname :");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, -1, -1));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 153, 255));
         jLabel14.setText("Role : ");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 153, 255));
         jLabel15.setText("Position :");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Angsana New", 1, 36)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 153, 255));
         jLabel16.setText("Mobile :");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, -1, -1));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, -1, -1));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/profile_teaser2.png"))); // NOI18N
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 190, 130));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/ProfileText.png"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, 40, 550, 100));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/logo_profile.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 210, 110));
 
         jButton1.setBackground(new java.awt.Color(204, 204, 255));
         jButton1.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N
@@ -174,7 +170,7 @@ public class UserP extends javax.swing.JFrame {
         jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 153, 255));
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/tg6.jpg"))); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/user.jpg"))); // NOI18N
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();
@@ -243,7 +239,6 @@ public class UserP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
