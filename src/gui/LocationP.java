@@ -80,7 +80,7 @@ public class LocationP extends javax.swing.JFrame {
                 ProfileBActionPerformed(evt);
             }
         });
-        getContentPane().add(ProfileB, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 560, 100, 30));
+        getContentPane().add(ProfileB, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 550, 100, 30));
 
         seminarB.setFont(new java.awt.Font("Segoe UI Light", 0, 13)); // NOI18N
         seminarB.setForeground(new java.awt.Color(153, 0, 153));
@@ -529,7 +529,7 @@ public class LocationP extends javax.swing.JFrame {
                 addLocaBActionPerformed(evt);
             }
         });
-        getContentPane().add(addLocaB, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 140, 50));
+        getContentPane().add(addLocaB, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 140, 50));
 
         quitLB.setBackground(new java.awt.Color(102, 255, 204));
         quitLB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
@@ -541,12 +541,12 @@ public class LocationP extends javax.swing.JFrame {
                 quitLBActionPerformed(evt);
             }
         });
-        getContentPane().add(quitLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 560, 100, 30));
+        getContentPane().add(quitLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 550, 100, 30));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Light", 1, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 102, 51));
         jLabel3.setText("1. Choose");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 100, 20));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 100, 20));
 
         jComboBox1.setFont(new java.awt.Font("Segoe UI Light", 0, 20)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(255, 102, 51));
@@ -556,7 +556,7 @@ public class LocationP extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 130, -1));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 130, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/locationIcon.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, -10, 90, 90));
@@ -574,7 +574,7 @@ public class LocationP extends javax.swing.JFrame {
                 fullmapBActionPerformed(evt);
             }
         });
-        getContentPane().add(fullmapB, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 560, 100, 30));
+        getContentPane().add(fullmapB, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 550, 100, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Light", 0, 13)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 255));

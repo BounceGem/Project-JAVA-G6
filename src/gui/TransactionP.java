@@ -24,6 +24,7 @@ public class TransactionP extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        quitLB = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -89,6 +90,18 @@ public class TransactionP extends javax.swing.JFrame {
         jLabel3.setText("Place :");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 90, 30));
 
+        quitLB.setBackground(new java.awt.Color(102, 255, 204));
+        quitLB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        quitLB.setForeground(new java.awt.Color(204, 51, 0));
+        quitLB.setText("BACK");
+        quitLB.setToolTipText("");
+        quitLB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quitLBActionPerformed(evt);
+            }
+        });
+        getContentPane().add(quitLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 550, 100, 30));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/bgUser2.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
@@ -99,6 +112,13 @@ public class TransactionP extends javax.swing.JFrame {
     private void jLabel8PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel8PropertyChange
         jLabel8.setText(LocationP.place.getPlaceName());
     }//GEN-LAST:event_jLabel8PropertyChange
+
+    private void quitLBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLBActionPerformed
+        LocationP lp02 = new LocationP();
+        lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        lp02.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_quitLBActionPerformed
 
     public static void main(String args[]) {
 
@@ -142,5 +162,6 @@ public class TransactionP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton quitLB;
     // End of variables declaration//GEN-END:variables
 }
