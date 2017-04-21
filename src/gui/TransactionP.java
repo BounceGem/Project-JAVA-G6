@@ -41,7 +41,7 @@ public class TransactionP extends javax.swing.JFrame {
         setLocationByPlatform(true);
         setMaximumSize(new java.awt.Dimension(800, 625));
         setMinimumSize(new java.awt.Dimension(800, 625));
-        setPreferredSize(new java.awt.Dimension(800, 625));
+        setPreferredSize(new java.awt.Dimension(800, 635));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

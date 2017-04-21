@@ -15,7 +15,6 @@ public class FullmapP extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Facility Management");
-        setAlwaysOnTop(true);
         setLocationByPlatform(true);
         setMaximumSize(new java.awt.Dimension(1447, 1035));
         setMinimumSize(new java.awt.Dimension(1447, 1035));

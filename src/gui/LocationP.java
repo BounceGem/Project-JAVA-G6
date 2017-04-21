@@ -65,7 +65,6 @@ public class LocationP extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Facility Management");
-        setAlwaysOnTop(true);
         setLocationByPlatform(true);
         setMaximumSize(new java.awt.Dimension(800, 625));
         setMinimumSize(new java.awt.Dimension(800, 625));
@@ -537,7 +536,7 @@ public class LocationP extends javax.swing.JFrame {
         quitLB.setBackground(new java.awt.Color(102, 255, 204));
         quitLB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
         quitLB.setForeground(new java.awt.Color(204, 51, 0));
-        quitLB.setText("BACK");
+        quitLB.setText("LOGOUT");
         quitLB.setToolTipText("");
         quitLB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -613,10 +612,13 @@ public class LocationP extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_ProfileBActionPerformed
     private void quitLBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLBActionPerformed
-        LoginP LiP = new LoginP();
-        LiP.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        LiP.setVisible(true);
-        this.setVisible(false);
+        int comfirm = JOptionPane.showConfirmDialog(null, "จะออกแล้วหรอมมมม", "Log out??", JOptionPane.YES_NO_OPTION);
+        if (comfirm == JOptionPane.YES_OPTION) {
+            LoginP LiP = new LoginP();
+            LiP.setDefaultCloseOperation(EXIT_ON_CLOSE);
+            LiP.setVisible(true);
+            this.setVisible(false);
+        }
     }//GEN-LAST:event_quitLBActionPerformed
     private void canteenBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_canteenBActionPerformed
         place.setPlaceName("Canteen");
