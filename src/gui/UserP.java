@@ -50,7 +50,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel2PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 130, 30));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 150, 50));
 
         jLabel3.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 153, 255));
@@ -60,7 +60,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel3PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 90, 30));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 90, 30));
 
         jLabel4.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 255));
@@ -70,7 +70,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel4PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 140, 50));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 170, 50));
 
         jLabel5.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 255));
@@ -80,7 +80,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel5PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 260, 30));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 180, 50));
 
         jLabel7.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 153, 255));
@@ -100,7 +100,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel8PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 110, 30));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, 140, 50));
 
         jLabel9.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 153, 255));
@@ -110,7 +110,7 @@ public class UserP extends javax.swing.JFrame {
                 jLabel9PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 130, 30));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 140, 50));
 
         jLabel10.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 255));
@@ -130,7 +130,7 @@ public class UserP extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 153, 255));
         jLabel13.setText("Lastname :");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, -1, -1));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 153, 255));
@@ -159,13 +159,13 @@ public class UserP extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 540, 90, 30));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 550, 90, 30));
 
         jButton2.setBackground(new java.awt.Color(204, 204, 255));
         jButton2.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 51, 255));
         jButton2.setText("Edit");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 540, 90, 30));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 550, 90, 30));
 
         jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N

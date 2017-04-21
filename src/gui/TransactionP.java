@@ -1,10 +1,9 @@
 package gui;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.text.DateFormat;
+import java.awt.event.*;
+import java.text.*;
 import java.util.Date;
-import javax.swing.Timer;
+import javax.swing.*;
 
 public class TransactionP extends javax.swing.JFrame {
 
@@ -169,6 +168,7 @@ public class TransactionP extends javax.swing.JFrame {
         jLabel8.setText(LocationP.place.getPlaceName());
     }//GEN-LAST:event_jLabel8PropertyChange
     private void quitLBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLBActionPerformed
+        LocationP.type = "maintain";
         LocationP lp02 = new LocationP();
         lp02.setDefaultCloseOperation(EXIT_ON_CLOSE);
         lp02.setVisible(true);

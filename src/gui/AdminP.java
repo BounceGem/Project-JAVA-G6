@@ -1,8 +1,5 @@
 package gui;
 
-import java.awt.HeadlessException;
-import javax.swing.JTextArea;
-
 public class AdminP extends javax.swing.JFrame {
 
     public AdminP() {
@@ -114,13 +111,13 @@ public class AdminP extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
-   /* public AdminP(JTextArea jTextArea1) {
+    /* public AdminP(JTextArea jTextArea1) {
         JTextArea textarea = new JTextArea();
         textarea.setLineWrap(true);
         textarea.setWrapStyleWord(true);
        
     }
-*/ //จะทำให้มันเลื่อนไม่ได้เวลาพิมอะ
+     */ //จะทำให้มันเลื่อนไม่ได้เวลาพิมอะ
     public static void main(String args[]) {
 
         try {

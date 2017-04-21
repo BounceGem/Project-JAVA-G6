@@ -69,7 +69,7 @@ public class LocationP extends javax.swing.JFrame {
         setLocationByPlatform(true);
         setMaximumSize(new java.awt.Dimension(800, 625));
         setMinimumSize(new java.awt.Dimension(800, 625));
-        setPreferredSize(new java.awt.Dimension(800, 625));
+        setPreferredSize(new java.awt.Dimension(800, 635));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -83,7 +83,7 @@ public class LocationP extends javax.swing.JFrame {
                 ProfileBActionPerformed(evt);
             }
         });
-        getContentPane().add(ProfileB, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 550, 100, 30));
+        getContentPane().add(ProfileB, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 560, 100, 30));
 
         seminarB.setFont(new java.awt.Font("Segoe UI Light", 0, 13)); // NOI18N
         seminarB.setForeground(new java.awt.Color(153, 0, 153));
@@ -532,7 +532,7 @@ public class LocationP extends javax.swing.JFrame {
                 addLocaBActionPerformed(evt);
             }
         });
-        getContentPane().add(addLocaB, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 140, 50));
+        getContentPane().add(addLocaB, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, 140, 50));
 
         quitLB.setBackground(new java.awt.Color(102, 255, 204));
         quitLB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
@@ -544,7 +544,7 @@ public class LocationP extends javax.swing.JFrame {
                 quitLBActionPerformed(evt);
             }
         });
-        getContentPane().add(quitLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 550, 100, 30));
+        getContentPane().add(quitLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 560, 100, 30));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Light", 1, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 102, 51));
@@ -577,7 +577,7 @@ public class LocationP extends javax.swing.JFrame {
                 fullmapBActionPerformed(evt);
             }
         });
-        getContentPane().add(fullmapB, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 550, 100, 30));
+        getContentPane().add(fullmapB, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 100, 30));
 
         adminB.setBackground(new java.awt.Color(102, 255, 204));
         adminB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
@@ -596,7 +596,7 @@ public class LocationP extends javax.swing.JFrame {
                 adminBPropertyChange(evt);
             }
         });
-        getContentPane().add(adminB, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 510, 100, 30));
+        getContentPane().add(adminB, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 520, 100, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Light", 0, 13)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 255));
@@ -785,7 +785,7 @@ public class LocationP extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_adminBActionPerformed
     private void adminBPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_adminBPropertyChange
-        if (LoginP.user.getRole().equalsIgnoreCase("Staff")) {
+        if (LoginP.user.getRole().equalsIgnoreCase("admin")) {
             adminB.setContentAreaFilled(true);
             adminB.setEnabled(true);
             adminB.setText("ADMIN");

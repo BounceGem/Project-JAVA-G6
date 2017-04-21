@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.*;
 import model.*;
 
@@ -203,7 +201,7 @@ public class RegisterP extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cPasswordRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cPasswordRFKeyReleased
-        if (cPasswordRF.getText().equals(passwordRF.getText())) {
+        if (cPasswordRF.getText().equals(passwordRF.getText()) && !passwordRF.getText().equalsIgnoreCase("")) {
             jLabel7.setText("Compatible");
             signupRB.setEnabled(true);
         } else {
@@ -212,7 +210,7 @@ public class RegisterP extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_cPasswordRFKeyReleased
     private void passwordRFKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordRFKeyReleased
-        if (cPasswordRF.getText().equals(passwordRF.getText())) {
+        if (cPasswordRF.getText().equals(passwordRF.getText()) && !passwordRF.getText().equalsIgnoreCase("")) {
             jLabel7.setText("Compatible");
             signupRB.setEnabled(true);
         } else {
@@ -255,6 +253,7 @@ public class RegisterP extends javax.swing.JFrame {
         positionF.setText("");
         mobileF.setText("");
         jLabel14.setText("");
+        FacultyF.setText("");
     }//GEN-LAST:event_resetRBActionPerformed
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         jRadioButton2.setSelected(false);
