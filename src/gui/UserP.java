@@ -42,7 +42,7 @@ public class UserP extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 153, 255));
         jLabel2.setText("Position");
         jLabel2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -52,7 +52,7 @@ public class UserP extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 150, 50));
 
-        jLabel3.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 153, 255));
         jLabel3.setText("ID");
         jLabel3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -62,7 +62,7 @@ public class UserP extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 90, 30));
 
-        jLabel4.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 255));
         jLabel4.setText("Firstname");
         jLabel4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -72,7 +72,7 @@ public class UserP extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 170, 50));
 
-        jLabel5.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 255));
         jLabel5.setText("Lastname");
         jLabel5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -82,7 +82,7 @@ public class UserP extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 180, 50));
 
-        jLabel7.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 153, 255));
         jLabel7.setText("Username");
         jLabel7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -92,7 +92,7 @@ public class UserP extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 140, 50));
 
-        jLabel8.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 255));
         jLabel8.setText("Role");
         jLabel8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -102,7 +102,7 @@ public class UserP extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, 140, 50));
 
-        jLabel9.setFont(new java.awt.Font("Calibri Light", 0, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 153, 255));
         jLabel9.setText("Mobile");
         jLabel9.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -110,39 +110,39 @@ public class UserP extends javax.swing.JFrame {
                 jLabel9PropertyChange(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 140, 50));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 270, 50));
 
-        jLabel10.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 153, 255));
         jLabel10.setText("UserID :");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 153, 255));
         jLabel11.setText("Username :");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 153, 255));
         jLabel12.setText("Firstname :");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 153, 255));
         jLabel13.setText("Lastname :");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 153, 255));
         jLabel14.setText("Role : ");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 153, 255));
         jLabel15.setText("Position :");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 153, 255));
         jLabel16.setText("Mobile :");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, -1, -1));

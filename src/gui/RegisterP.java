@@ -232,6 +232,12 @@ public class RegisterP extends javax.swing.JFrame {
                     this.setVisible(false);
                 } catch (SQLException ex) {
                     System.err.println(ex);
+                } finally {
+                    try {
+                        con.close();
+                    } catch (SQLException ex) {
+                        System.err.println(ex);
+                    }
                 }
             } else {
                 JOptionPane.showMessageDialog(this, "Please insert text in blank space", "Error!", JOptionPane.WARNING_MESSAGE);

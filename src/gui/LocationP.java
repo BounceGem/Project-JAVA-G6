@@ -854,7 +854,7 @@ public class LocationP extends javax.swing.JFrame {
             ps2.setString(1, String.valueOf(place.getPlaceId()));
             ResultSet rs2 = ps2.executeQuery();
             if (rs2.next()) {
-                Account.orm(rs2, account);
+                Account.orm(rs2, account, place);
             }
         } catch (SQLException ex) {
             System.err.println(ex);

@@ -1,7 +1,7 @@
 package model;
 
-import java.util.Date;
-import java.util.HashMap;
+import java.sql.Connection;
+import java.util.*;
 
 public class Transaction extends Account {
 
@@ -10,6 +10,7 @@ public class Transaction extends Account {
     private String transactionCode;
     private Date transactionDateTime;
     private double amount;
+    Connection con = ConnectionBuilder.getConnection();
 
     public String gettransactionDescription(long accountId) {
         return "";

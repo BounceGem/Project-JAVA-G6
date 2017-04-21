@@ -1,9 +1,12 @@
 package gui;
 
 import java.awt.event.*;
+import java.sql.*;
 import java.text.*;
 import java.util.Date;
 import javax.swing.*;
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import model.*;
 
 public class TransactionP extends javax.swing.JFrame {
 
@@ -188,7 +191,7 @@ public class TransactionP extends javax.swing.JFrame {
         trancode = jRadioButton2.getText();
     }//GEN-LAST:event_jRadioButton2ActionPerformed
     private void submitBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBActionPerformed
-        // TODO add your handling code here:
+        nextP();
     }//GEN-LAST:event_submitBActionPerformed
     private void jComboBox2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jComboBox2PropertyChange
         jComboBox2.addItem(String.valueOf(LocationP.account.getAccountId()));
@@ -199,6 +202,38 @@ public class TransactionP extends javax.swing.JFrame {
     private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
         updater.start();
     }//GEN-LAST:event_jLabel2MouseEntered
+    public void nextP() {
+        if (!jTextField1.getText().equalsIgnoreCase("") && trancode.equalsIgnoreCase("deposit")) {
+            try {
+                con = ConnectionBuilder.getConnection();
+                LocationP.account.deposit(Double.valueOf(jTextField1.getText()));
+                JOptionPane.showMessageDialog(this, LocationP.account.toString(), "Test", JOptionPane.WARNING_MESSAGE);
+            } catch (SQLException ex) {
+                System.err.println(ex);
+            } finally {
+                try {
+                    con.close();
+                } catch (SQLException ex) {
+                    System.err.println(ex);
+                }
+            }
+        } else if (!jTextField1.getText().equalsIgnoreCase("") && trancode.equalsIgnoreCase("withdraw")) {
+            try {
+                con = ConnectionBuilder.getConnection();
+                LocationP.account.withdraw(Double.valueOf(jTextField1.getText()));
+                JOptionPane.showMessageDialog(this, LocationP.account.toString(), "Test", JOptionPane.WARNING_MESSAGE);
+            } catch (SQLException ex) {
+                System.err.println(ex);
+            } finally {
+                try {
+                    con.close();
+                } catch (SQLException ex) {
+                    System.err.println(ex);
+                }
+            }
+        }
+    }
+
     final Timer updater = new Timer(10, new ActionListener() {
         public void actionPerformed(ActionEvent e) {
             jLabel15.setText(DateFormat.getDateTimeInstance().format(new Date()));
@@ -225,7 +260,10 @@ public class TransactionP extends javax.swing.JFrame {
         });
     }
 
+    Connection con;
+    PreparedStatement ps;
     String trancode = "";
+    Place place = LocationP.place;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
