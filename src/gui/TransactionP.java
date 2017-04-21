@@ -1,5 +1,11 @@
 package gui;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.util.Date;
+import javax.swing.Timer;
+
 public class TransactionP extends javax.swing.JFrame {
 
     public TransactionP() {
@@ -41,11 +47,11 @@ public class TransactionP extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel15.setText("date");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 60, 40));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 170, 40));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Light", 1, 24)); // NOI18N
         jLabel13.setText("Description");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 130, -1));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 130, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/TransactionT.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 410, 60));
@@ -125,7 +131,7 @@ public class TransactionP extends javax.swing.JFrame {
         jTextArea2.setRows(5);
         jScrollPane2.setViewportView(jTextArea2);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 650, -1));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 650, -1));
 
         submitB.setBackground(new java.awt.Color(102, 255, 204));
         submitB.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
@@ -148,6 +154,11 @@ public class TransactionP extends javax.swing.JFrame {
         getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 110, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/bgUser2.jpg"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+        });
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();
@@ -180,6 +191,14 @@ public class TransactionP extends javax.swing.JFrame {
     private void jLabel10PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel10PropertyChange
         jLabel10.setText(LocationP.account.getStatus());
     }//GEN-LAST:event_jLabel10PropertyChange
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+        updater.start();
+    }//GEN-LAST:event_jLabel2MouseEntered
+    final Timer updater = new Timer(10, new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            jLabel15.setText(DateFormat.getDateTimeInstance().format(new Date()));
+        }
+    });
 
     public static void main(String args[]) {
 
