@@ -45,6 +45,7 @@ public class TransactionP extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel15.setText("date");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 170, 40));
 
@@ -55,6 +56,7 @@ public class TransactionP extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/TransactionT.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 410, 60));
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel8.setText("Name place");
         jLabel8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
@@ -87,6 +89,7 @@ public class TransactionP extends javax.swing.JFrame {
         jLabel6.setText("Account Status :");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, 180, 30));
 
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel10.setText("Status");
         jLabel10.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
@@ -99,21 +102,23 @@ public class TransactionP extends javax.swing.JFrame {
         jLabel14.setText("Baht");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 310, 60, -1));
 
+        jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton1.setText("withdraw");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, -1, -1));
+        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, -1, -1));
 
+        jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton2.setText("deposit");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, -1, -1));
+        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, -1, -1));
 
         jTextField1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, 190, 40));

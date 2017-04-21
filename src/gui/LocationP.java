@@ -612,7 +612,7 @@ public class LocationP extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_ProfileBActionPerformed
     private void quitLBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitLBActionPerformed
-        int comfirm = JOptionPane.showConfirmDialog(null, "จะออกแล้วหรอมมมม", "Log out??", JOptionPane.YES_NO_OPTION);
+        int comfirm = JOptionPane.showConfirmDialog(null, "จะออกแล้วหรอมมมมมมม", "Log out??", JOptionPane.YES_NO_OPTION);
         if (comfirm == JOptionPane.YES_OPTION) {
             LoginP LiP = new LoginP();
             LiP.setDefaultCloseOperation(EXIT_ON_CLOSE);

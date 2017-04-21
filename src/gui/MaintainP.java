@@ -1,5 +1,11 @@
 package gui;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.util.Date;
+import javax.swing.Timer;
+
 public class MaintainP extends javax.swing.JFrame {
 
     public MaintainP() {
@@ -102,8 +108,9 @@ public class MaintainP extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 550, 90, 30));
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel7.setText("clock");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 200, 60));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 280, 60));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
         jLabel5.setText("Maintenance indicators");
@@ -132,6 +139,11 @@ public class MaintainP extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/bgUser2.jpg"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel1MouseEntered(evt);
+            }
+        });
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();
@@ -154,6 +166,15 @@ public class MaintainP extends javax.swing.JFrame {
         lp02.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
+        updater.start();
+    }//GEN-LAST:event_jLabel1MouseEntered
+    final Timer updater = new Timer(10, new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            jLabel7.setText(DateFormat.getDateTimeInstance().format(new Date()));
+        }
+    });
 
     public static void main(String args[]) {
 
